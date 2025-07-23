@@ -137,8 +137,7 @@
 @media all and (max-width:1440px){
 	#mainQuickCon .main-tit{font-size: 64px;}
 	.main-tit-box {padding-right: 0px;}
-}
-@media all and (max-width:1400px){
+	.main-quick-wrapper {padding: 0 54px;}
 	.main-quick-right {top: -60px;}
 	.main-quick-item:nth-child(1) {width: 150px; height: 200px;}
 	.main-quick-item:nth-child(2) {width: 300px; height: 200px;}
@@ -146,16 +145,18 @@
 	.main-quick-item:nth-child(4) {width: 150px; height: 200px;}
 	#mainQuickCon .main-tit-box .main-sub-tit {font-size: 16px;}
 }
-/* @media all and (max-width:1220px){
+
+
+@media all and (max-width:1220px){
 	.area-box {padding: 0 50px;	}
 	.main-quick-wrapper {padding: 0 26px;}
 	.main-quick-right {top: -10px;}
 	.main-quick-right .main-tit-box {width: 45%;}
 	.main-quick-left {width: calc(58% - 60px);}
 	.main-quick-right .area-wide{padding: 0;}
-} */
+}
 
-/* @media all and (max-width:1024px){
+@media all and (max-width:1024px){
 	#mainQuickCon {margin: 50px 0;}
 	#mainQuickCon figure {top: 0; right: 0;}
 	.area-box {display: flex; flex-direction: column;}
@@ -173,7 +174,7 @@
 	.main-quick-item:nth-child(4) {width: 300px; height: 200px; grid-area: 2 / 2 / 3 / 2;}
 	.main-quick-txt h5 {font-size: 20px; display: inline-block; background-color: rgba(0, 0, 0, .3); padding: 3px 5px; color: #f6f6f6; font-weight: 500;}
 	#mainQuickCon .main-tit-box .main-sub-tit {font-size: 16px;}
-} */
+}
 @media all and (max-width:800px){
 	#mainQuickCon {margin-top: 150px;}
 	#mainQuickCon figure {top: -120px; left: -100px;}
@@ -201,18 +202,21 @@
 .main-quick-item:nth-child(3) {width: 250px; height: 180px;}
 .main-quick-item:nth-child(4) {width: 250px; height: 180px;}
 }
+@media all and (max-width:640px) {
+	#mainQuickCon {margin-top: 20px;}
+}
 @media all and (max-width:600px) {
-	#mainQuickCon {margin-top: 50px;}
+	#mainQuickCon {margin-top: 0px;}
 	#mainQuickCon figure {top: -160px; left: -150px;}
 }
 @media all and (max-width:550px) {
-	#mainQuickCon {margin-top: 0px;}
+	
 	#mainQuickCon figure {top: -85px; left: -150px;}
 	#mainQuickCon figure img {width: 800px; height: 800px;}
 
-#mainQuickCon .main-tit-box .main-tit {font-size: 48px; font-weight: 900;}
+#mainQuickCon .main-tit-box .main-tit {font-size: 48px; }
 #mainQuickCon .main-tit-box .main-sub-tit {font-size: 12px; margin: 10px;}
-#mainQuickCon .main-tit-box button {font-size: 12px;}
+#mainQuickCon .main-tit-box button {font-size: 20px; padding: 20px 0;}
 .main-quick-wrapper{gap: 10px; grid-template-columns: repeat(2, 1fr); margin: 0px auto 50px;}	
 .main-quick-item {border-radius: 10px;}
 .main-quick-item:nth-child(1) {width: 200px; height: 150px;}
@@ -287,7 +291,7 @@
 @media all and (max-width:800px){
 	#mainCustomerCon{padding-bottom: 150px;}
 	.main-customer-con{padding-top: 700px;}
-	#mainCustomerCon .main-tit-box .main-tit{margin-top: 10px; font-size: 40px;}
+	#mainCustomerCon .main-tit-box .main-tit{margin-top: 40px; font-size: 24px;}
 	.main-control-box{margin-top: 60px; font-size: 0;}
 	.main-control-box button{width: 55px; height: 55px;}
 	.main-control-box button i{position: relative; top: 2px; font-size: 24px; color: #000;}
@@ -299,7 +303,7 @@
 	.main-customer-item{width: calc(70% - 30px); height: 560px !important;}
 	.main-customer-item a{height: 300px;}
 	.main-customer-item a:before{bottom: 6%; left: 6%; font-size: 22px;}
-	.main-customer-inner{padding: 6% 6% 0;}
+	.main-customer-inner{padding: 4% 6% 0;}
 	.main-customer-top{padding-bottom: 20px;}
 	.main-customer-top .category{margin-right: 10px; font-size: 14px;}
 	.main-customer-top .date{font-size: 13px;}
@@ -310,17 +314,18 @@
 }
 @media all and (max-width:700px) {
 	.main-customer-item{height: 520px !important;}
-
+	.main-customer-inner{padding: 5% 6% 0;}
 }
 
 @media all and (max-width:640px){
 	.main-customer-item{height: 490px !important;}
 	.main-customer-item a:before{bottom: 10%; left: 10%; font-size: 22px;}
-	.main-customer-inner{padding: 5% 5% 0;}
+	.main-customer-inner{height: 95%; padding: 6% 5% 0;}
 	.main-customer-bottom .tit {font-size: 18px;}
 } 
 @media all and (max-width:600px) {
 	.main-customer-item{height: 450px !important;}
+	.main-customer-inner{height: 100%; padding: 3% 4% 0;}
 }
 @media all and (max-width:550px) {
 	.main-customer-item {height: 430px !important;}
@@ -336,15 +341,18 @@
 	#mainCustomerCon .main-tit-box .main-tit {font-size: 24px; font-weight: 400;}
 	
 }
-@media all and (max-width:453px) {
+@media all and (max-width:460px) {
 	.main-tit-box .main-sub-title {font-size: 46px;}
 	#mainCustomerCon .main-tit-box .main-tit {font-size: 20px;}
+	.main-customer-inner {height: 97%; padding: 4% 6% 0;}
 	.main-customer-item {height: 390px !important;}
 }
 @media all and (max-width:420px) {
+	.main-customer-inner {height: 90%;}
 	.main-customer-item {height: 390px !important;}
 }
 @media all and (max-width:400px) {
+	.main-customer-inner {height: 95%;}
 	.main-customer-item {height: 360px !important;}
 }
 @media all and (max-width:394px) {

@@ -84,7 +84,7 @@
 .greeeting-top-box .top-txt-02 { font-size: 20px; line-height: 28px; letter-spacing: 0px; color: #333; font-weight: 500; margin-bottom: 35px; } 
 .greeeting-top-box .sub-tit { display: block; font-size:26px; line-height:1.53em; letter-spacing:-1.6px; color:#000; font-weight:600; } 
 
-.greeting-bottom-box { width:100%;  text-align: left; } 
+.greeting-bottom-box { width:90%;  text-align: left; } 
 .greeting-bottom-box .bottom-txt { font-size: 20px;line-height: 28px;letter-spacing: 0px;color: #333;font-weight: 500;margin-bottom: 33px; line-height: 40px; } 
 .greeting-bottom-box .bottom-txt:first-child {
 	border-top: 1px solid #a6a6a6;
@@ -327,6 +327,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c2e0', end
 	}
 }
 @media(max-width:850px){
+	    .intro-info-wrap {margin-bottom: 100px;}
+	    .intro-info-wrap .img-box {padding-bottom: 15px;}
 	    .intro-tit-box .intro-tit {
         font-size: 20px;
         line-height: 24px;
@@ -594,7 +596,7 @@ iframe {
 		.intro-info-wrap .txt-box2{width: 750px;}
 }
 @media(max-width:900px){
-	iframe {width: 750px; height: 750px;}
+	iframe {width: 750px; height: 750px; padding-top: 50px; padding-bottom: 15px;}
 	
 }
 @media(max-width:768px){

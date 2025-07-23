@@ -198,7 +198,7 @@
 /* -------- 메인 컨텐츠 :: 공통 -------- */
 /* 공통 :: 타이틀 */
 .main-tit-box{letter-spacing:-0.75px; padding-right: 100px;}
-.main-tit-box .main-sub-title{display:block; font-size:80px; font-weight: 900; letter-spacing:-0.75px; line-height:1.5; color:#E65100; opacity: 0;}
+.main-tit-box .main-sub-title{display:block; font-size:80px; font-weight: 800; letter-spacing:-0.75px; color:#E65100; opacity: 0;}
 .main-tit-box .main-tit{font-size:70px; line-height: 1; font-weight:700; color:#fff;}
 .main-tit-box .main-tit.splitting .char{
 	opacity:0;
@@ -322,9 +322,9 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 .main-quick-txt {position: absolute; right: 5%; bottom: 7%;}
 .main-quick-txt h5{font-size: 24px; line-height: 1.3; letter-spacing: -0.65px; font-weight: 700; color: rgba(51, 51, 51, .7);}
 .main-quick-txt p{margin-top: 10px; font-size: 16px; line-height: 1.3; letter-spacing: -0.25px; font-weight: 900; color: rgba(51, 51, 51, .5)}
-@media all and (min-width:801px){	
-	.main-quick-item a:hover .main-quick-bg{}
-}
+
+
+
 
 /* -------- 메인 컨텐츠 :: 컨텐츠3(공지사항) -------- */
 #mainCustomerCon{position: relative; background-color: #fff;}
