@@ -1,0 +1,61 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.readonly-form {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.readonly-form h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  color: #444;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form-actions {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn.cancel {
+  background: #f0641f;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

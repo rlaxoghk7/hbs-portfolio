@@ -1,0 +1,96 @@
+@charset "utf-8";
+img, video, iframe {
+    max-width: 100%;
+}
+#patent>div{margin-bottom: 4.44rem;}
+#patent img{border:1px solid #E5E5E5;cursor: pointer;}
+#patentModal .modal-content{background-color: transparent;border:0;border-radius: 0;padding:2rem 0}
+#patentModal .close{color:#fff;padding: 0 !important;}
+#patent-img {box-shadow: 0px 20px 60px #00000029;}
+#patent .caption2{color:#B2B2B2 ;}
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+/* grid */
+[class^=container]{position: relative;}
+.container{max-width:1230px}
+.container-lg{max-width: 1440px;padding-left: 20px;padding-right: 20px;}
+.container-xl{max-width: 1680px}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* prcenter : award */
+.awardlist{display:flex;margin:0 -20px;justify-content:space-between;flex-wrap:wrap; padding: 30px 100px 0px;}
+.awardlist>li{padding:0 20px;flex-basis:50%;flex-shrink:0;min-width:0}
+.awardlist__inner{display:flex;padding:40px 0;border-top:1px solid #e6e6e6;}
+.awardlist__thumbnail{flex-basis:200px;margin-right:50px;border:1px solid var(--lightgray);cursor:pointer}
+.awardlist__thumbnail img{max-width:200px}
+.awardlist__content{position:relative;padding:15px 20px; text-align: left;}
+.awardlist__category{font-weight:bold;color:var(--point)}
+.awardlist__title{display:-webkit-box;overflow:hidden;min-height:34px;margin:28px 0 12px;font-size:24px;font-weight:500;line-height:34px;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.awardlist__agency{/*overflow:hidden;*/min-height:22px;font-size:16px;font-weight:300;color:#999;line-height:22px;-webkit-box-orient:vertical;-webkit-line-clamp:1}
+.awardlist__btn{position:absolute;bottom:20px;left:20px;width:60px;height:60px;border-radius:50%;background:transparent;-webkit-transition:all 0.3s ease-out;transition:all 0.3s ease-out}
+.awardlist__icon{display:inline-block;width:60px;height:60px;border-radius:50%;background-repeat:no-repeat;background-position:50%}
+.awardlist__icon--more{background-image:url(/images/icon/icon_plus_gray.svg);background-size:14px}
+.awardlist>li:hover .awardlist__inner{border-color:var(--point)}
+.awardlist>li:hover .awardlist__btn{background:var(--point)}
+.awardlist>li:hover .awardlist__icon--more{background-image:url(/images/icon/icon_plus_white.svg)}
+
+@media (max-width:1024px) {
+	.awardlist__title{
+		font-size: 22px;
+	}
+	.awardlist__agency{
+		font-size: 14px;
+	}
+	.awardlist { padding: 30px 59px;}
+}
+@media (max-width:900px) {
+	.awardlist__thumbnail img {
+    max-width: 180px;
+	}
+	.awardlist__thumbnail{margin-right: 20px;}
+	.awardlist__title {font-size: 20px;}
+	.awardlist>li {
+    padding: 0 15px;
+	}
+}
+@media (max-width:800px) {
+	.awardlist__agency {
+        font-size: 12px;
+    }}
+
+@media screen and (max-width:768px) {
+		.awardlist{flex-direction:column;flex-wrap:nowrap; padding: 0 20px; }
+	.awardlist__thumbnail{flex-basis:50%;margin-right:18px}
+	.awardlist__thumbnail img{max-width:100%}
+	.awardlist__content{flex-basis:50%;padding:0 ;display: flex;flex-direction: column; justify-content: center;}
+	.awardlist__category{font-size:12px}
+	.awardlist__title{margin:15px 0 10px;min-height:28px;font-size:18px;line-height:24px}
+	.awardlist__agency{min-height:16px;font-size:12px;line-height:16px}
+	.performance{flex-direction:column}
+	.performance>li~li{position:relative;margin-top:40px;padding-top:40px}
+	.performance__icon{width:180px;height:180px;margin:0 auto;padding-top:48px}
+	.performance__title{font-size:18px}
+
+}
+
+
+@media screen and  (max-width:575px) {
+
+}
+.root_daum_roughmap .wrap_controllers {
+	display: none;
+}
+/* 임시
+#channelio{position: fixed;bottom:20px;right:20px;z-index:90; width: 60px;height: 60px;background:#000;box-shadow: 0px 10px 30px rgba(0,0,0,.2);} */
+#ch-plugin-core>div:nth-child(3){bottom:15px !important;right:15px !important}
+
+/* 영문 */
+[lang=en] .cs-write .custom-file-label::after{content: "Upload";}

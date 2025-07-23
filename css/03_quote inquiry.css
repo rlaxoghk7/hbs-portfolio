@@ -1,0 +1,222 @@
+/* 기본 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+}
+#quoteForm label {position: relative;}
+#quoteForm label::after {content:''; position: relative; width: 5px; height: 5px; display: block; border-radius: 100%; background-color: #356690; top: -12px;left: -14px;}
+.form-group.site label {display: none;}
+.quote-visual h1 {
+  position: absolute;
+  color: #fff;
+  font-size: 84px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 115px;
+  white-space: nowrap;
+}
+select#categoryA {}
+select#category {appearance: none; background-color: #eee; color: #aaa; font-weight: 500;}
+.quote-form {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 5%;
+}
+.quote-form-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.quote-form-title p {font-size: 30px; line-height: 38px;color: #333; font-weight: 600;}
+.quote-form-title p span {color: #E65100;}
+
+.quote-form h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 50px 5%;
+  font-weight: 700;
+  letter-spacing: -0.65px;
+}
+.quote-form .l-s,
+.quote-form .lead,
+.quote-form .sub {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 19px;
+}
+.quote-form .sub {
+  padding-bottom: 75px;
+}
+
+.quote-form .highlight {
+  color: #f0641f;
+  font-weight: bold;
+}
+
+.form-group, .form-group-text {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label, .form-group-text label {
+  font-weight: 700;
+  font-size: 22px;
+  cursor: auto;
+  padding: 0px 0px 15px 20px;
+}
+input, select {font-weight: 300;}
+#product::placeholder #category::placeholder #company::placeholder ,#name::placeholder , #phone::placeholder , #email::placeholder , #subject::placeholder , #message::placeholder {color: #ccc; opacity: 1; font-family: 'Pretendard', sans-serif;}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group-text input,
+.form-group-text select,
+.form-group-text textarea {
+  padding: 12px 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #ccc;
+  outline: none;
+}
+
+.form-group textarea,
+.form-group-text textarea,
+::placeholder {
+  resize: none;
+  color: #ccc;
+}
+
+
+
+.group-wrap {display: flex; gap: 4%;}
+.group-wrap .form-group.name {width: calc(48%);}
+.group-wrap .form-group.phone {width: calc(48%);}
+
+.mail-wrap {display: flex; position: relative; gap: 4%; align-items: flex-end;}
+.mail-wrap .form-group.email {width: calc(48%);}
+.mail-wrap p {position: absolute; top: 52px; left: 49.3%; font-size: 20px; font-weight: 700;}
+.mail-wrap .form-group.site {width: calc(20%);;}
+
+.privacy_check {
+  accent-color: #E65100; 
+}
+.form-actions {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  gap: 3%;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* right: 227px; */
+}
+
+.btn a{
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.btn.cancel a{
+  background-color: #eee;
+  color: #333;
+}
+
+.btn.submit a{
+  background-color: #f0641f;
+  color: #f6f6f6;
+}
+.form-group-text {position: relative;}
+.form-group-text .word_count {position: absolute; bottom: 20px; right: 30px; font-size: 16px; color: #ccc; pointer-events: none;}
+
+/* 개인정보 동의서 팝업 */
+.quote-form .privacy-tit {margin: 50px 0 30px; }
+.quote-form .privacy-tit h2{font-size: 32px; padding:30px 0; margin-bottom: 0; border-bottom: 1px solid #ddd;}
+.privacy_con {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.privacy_con .text-gray {color: #888888;}
+.privacy_con .text-gray p {font-size: 16px; color: #555; font-family: 'Pretendard', sans-serif;}
+
+.privacy_tit {margin-top: 30px; font-size: 18px; display: flex; justify-content: center;}
+.privacy_tit p {line-height: 2;}
+input[type=checkbox] {
+zoom: 1.5;
+padding-top: 1px;
+}
+
+@media (max-width: 1100px) {
+  .quote-form-title p {font-size: 22px; line-height: 32px;}
+  .form-group label, .form-group-text label {font-size: 20px; padding-bottom: 10px;}
+  .form-group input, .form-group select, .form-group textarea, .form-group-text input, .form-group-text select, .form-group-text textarea {padding: 10px 14px; font-size: 15px;}
+  .mail-wrap p {top: 45px; left: 49%;}
+  .form-actions {margin-top: 45px;}
+  .btn {padding: 10px 20px; font-size: 18px;}
+}
+@media (max-width: 900px) {
+  .form-group label, .form-group-text label {font-size: 18px; padding-bottom: 8px;}
+  .form-group input, .form-group select, .form-group textarea, .form-group-text input, .form-group-text select, .form-group-text textarea {padding: 8px 12px; font-size: 14px;}
+  .group-wrap {gap: 5%;}
+  .mail-wrap {gap: 5%;}
+  .mail-wrap p {font-size: 18px; top: 40px;}
+  .quote-form .privacy-tit h2 {padding: 0 0 30px; font-size: 28px;}
+  .form-group-text .word_count {font-size: 12px;}
+}
+@media (max-width: 800px) {
+  .quote-form {padding: 50px 5%;}
+  .quote-form h2 {font-size: 48px; padding: 30px 5%;}
+  .mail-wrap p {left: 49.5%;}
+  .form-actions {margin-top: 30px;}
+  .form-group-text .word_count {bottom: 14px; right: 20px;}
+}
+@media (max-width: 600px) {
+  .quote-form h2 {font-size: 40px;}
+  .quote-form-title {margin-bottom: 80px;}
+  .quote-form-title p {font-size: 18px; line-height: 28px;}
+  .form-group input, .form-group select, .form-group textarea, .form-group-text input, .form-group-text select, .form-group-text textarea {font-size: 13px; padding: 6px 10px;}
+  .mail-wrap p {font-size: 14px; left: 49.2%;}
+  .privacy_con .text-gray p {font-size: 14px;}
+  .privacy_tit {font-size: 16px; margin-top: 10px;}
+  .btn {font-size: 16px;}
+  .form-group-text .word_count {font-size: 10px;}
+}
+@media (max-width: 500px) {
+  .quote-form h2 {font-size: 34px; margin-bottom: 20px;}
+  .quote-form-title p {font-size: 15px; line-height: 24px;}
+  .form-group label, .form-group-text label {font-size: 16px; padding-bottom: 4px;}
+  .group-wrap {flex-direction: column;}
+  .group-wrap .form-group.name {width: 100%;}
+  .group-wrap .form-group.phone {width: 100%;}
+  .mail-wrap .form-group.email {width: 60%;}
+  .mail-wrap .form-group.site {width: 40%;}
+  .mail-wrap p {left: 58.2%; top: 34px;}
+  .quote-form .privacy-tit h2 {font-size: 24px; padding-bottom: 15px;}
+  .privacy_tit {font-size: 14px;}
+  .form-actions {margin-top: 20px;}
+  .btn {font-size: 14px; padding: 8px 16px;}
+}
+@media (max-width: 400px) {
+  .quote-form {padding: 20px 5% 50px;}
+  .quote-form-title {margin-bottom: 50px;}
+  .quote-form h2 {font-size: 30px;}
+  .quote-form-title p {font-size: 13px; line-height: 20px;}
+  .mail-wrap p {font-size: 12px;}
+  .privacy_tit {font-size: 12px;}
+  .privacy_tit p {line-height: 3;}
+  .btn {font-size: 12px; padding: 8px 14px;}
+}

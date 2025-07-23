@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBS</title>
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/language.css" /><!-- 해당언어에서만 사용하는 css -->
+  <link rel="stylesheet" href="./css/layout_responsive.css">
+  <link rel="stylesheet" href="./css/content_responsive.css">
+  <link rel="stylesheet" href="./css/main_responsive.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- XEicon -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Board Skin -->
+  <link rel="stylesheet" href="./css/cm_bbs_common.css">
+  <link rel="stylesheet" href="./css/cm_board.css">
+  <link rel="stylesheet" href="./css/cm_gallery.css"/>
+  <link rel="stylesheet" href="./css/cm_history.css">
+  <link rel="stylesheet" href="./css/cm_certification.css" />
+  <link rel="stylesheet" href="./css/cm_faq.css" />
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./css/swiper.css" />
+  <!--[if lte IE 9]>
+  	<link rel="stylesheet" href="/css/ie9.css">
+  <![endif]-->
+  <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+</head>
+<body style="background-color: #fff;">
+  <div id="wrap" class="main-wrap">
+    <header id="header" class="top-fixed-object"><!-- .top-fixed가 붙는 object에 top-fixed-object 클래스 추가  -->
+		<div class="gnb-overlay-bg"></div>
+		<div id="headerInnerWrap">
+			<!-- ****************** 헤더상단 ********************** -->
+			<div id="headerInner" class="area-wide clearfix">
+				<h1 class="logo"><a href="/index.html"><em class="blind">메인으로</em><img src="./images/logo.png" alt="비씨엔씨" /></a></h1>
+				<!-- 외국어 선택 -->
+			<!-- ****************** GNB ********************** -->
+			<!-- GNB PC  -->
+			<nav id="gnb" class="total-menu">
+				<h2 class="blind">주메뉴</h2>
+				<!-- 
+					- 전체메뉴 : class="total-menu"
+					- 각각메뉴 : class="each-menu" + <div id="gnbBg"></div> 삭제
+				-->
+				<div id="gnbBg"></div>
+				<ul class="clearfix area">
+					<li class="gnb1">
+						<a href="/01_about_certificates.html">회사소개</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/01_about_greeting.html"><span>인사말</span></a></li>
+								<li><a href="/01_about_history.html"><span>연혁</span></a></li>
+								<li><a href="/01_about_certificates.html"><span>인증서</span></a></li>
+								<li><a href="/01_about_overview.html"><span>회사개요</span></a></li>
+								<li><a href="/01_about_location.html"><span>오시는길</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb2">
+						<a href="/02_Products_1.html">제품소개</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/02_Products_1.html"><span>효성모터</span></a></li>
+								<li><a href="/02_Products_2.html"><span>ABB</span></a></li>
+								<li><a href="/02_Products_3.html"><span>윌로펌프</span></a></li>
+								<li><a href="/02_Products_4.html"><span>그런포스펌프</span></a></li>
+								<li><a href="/02_Products_5.html"><span>데스미펌프</span></a></li>
+								<li><a href="/02_Products_6.html"><span>DANFOSS</span></a></li>						
+								<li><a href="/02_Products_7.html"><span>감속기</span></a></li>						
+								<li><a href="/02_Products_8.html"><span>자동제어판넬</span></a></li>							
+              </ul>
+						</div>
+					</li>
+					<li class="gnb3">
+						<a href="/03_quote.html">견적문의</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/03_quote.html"><span>견적문의</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb4">
+						<a href="/04_support_FAQ.html">고객지원</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/04_support_FAQ.html"><span>FAQ</span></a></li>
+								<li><a href="/04_support_news.html"><span>최신소식</span></a></li>
+								<li><a href="/04_support_resources.html"><span>자료실</span></a></li>				
+              </ul>
+						</div>
+					</li>
+					<li class="gnb5">
+						<a href="/05_inquiry_contact.html">문의/납품현황</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/05_inquiry_contact.html"><span>문의현황</span></a></li>
+								<li><a href="/05_inquiry_delivery.html"><span>납품현황</span></a></li>						
+              </ul>
+						</div>
+					</li>						
+				</ul>
+			</nav>
+		</div>
+		<!-- GNB Mobile -->
+		<button class="nav-open-btn" title="네비게이션 열기">
+			<span class="line line1"></span><span class="line line2"></span><span class="line line3"></span>
+		</button>
+		<div class="gnb-overlay-bg-m"></div>
+		<nav id="gnbM" class="gnb-style-basic">
+			<!-- 
+				기본스타일 : .gnb-style-basic
+				Full 스타일 : .gnb-style-full
+			-->
+			<h2 class="blind">주메뉴</h2>		
+			<div class="header-util-menu-box">
+				<!-- 로고 -->
+				<div id="headerInner" class="area-wide clearfix">
+					<h1 class="inner-logo"><a href="/index.html"><em class="blind">메인으로</em></a></h1>
+				</div>
+				<!-- // -->
+			</div>
+			<!-- // -->
+			<div class="gnb-navigation-wrapper">
+				
+				<div class="gnb-navigation-inner">
+					<ul id="navigation" data-menu-clone="true">
+					<li class="gnb1 has-2dep">
+						<a href="/01_about_greeting.html">회사소개</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/01_about_greeting.html"><span>인사말</span></a></li>
+								<li><a href="/01_about_history.html"><span>연혁</span></a></li>
+								<li><a href="/01_about_certificates.html"><span>인증서</span></a></li>
+								<li><a href="/01_about_overview.html"><span>회사개요</span></a></li>
+								<li><a href="/01_about_location.html"><span>오시는길</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb2 has-2dep">
+						<a href="/02_Products_1.html">제품소개</a>
+						<div class="gnb-2dep">
+							<ul>
+							 	<li><a href="/02_Products_1.html"><span>효성모터</span></a></li>
+								<li><a href="/02_Products_2.html"><span>ABB</span></a></li>
+								<li><a href="/02_Products_3.html"><span>윌로펌프</span></a></li>
+								<li><a href="/02_Products_4.html"><span>그런포스펌프</span></a></li>
+								<li><a href="/02_Products_5.html"><span>데스미펌프</span></a></li>
+								<li><a href="/02_Products_6.html"><span>DANFOSS</span></a></li>						
+								<li><a href="/02_Products_7.html"><span>감속기</span></a></li>						
+								<li><a href="/02_Products_8.html"><span>자동제어판넬</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb3 has-2dep">
+						<a href="/03_quote.html">견적문의</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/03_quote.html"><span>견적문의</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb4 has-2dep">
+						<a href="/04_support_FAQ.html">고객지원</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/04_support_FAQ.html"><span>FAQ</span></a></li>
+								<li><a href="/04_support_news.html"><span>최신소식</span></a></li>						
+								<li><a href="/04_support_resources.html"><span>자료실</span></a></li>						
+              </ul>
+						</div>
+					</li>				
+          <li class="gnb5 has-2dep">						
+						<a href="/05_inquiry_contact.html">문의/납품현황</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="./05_inquiry_contact.html"><span>문의현황</span></a></li>
+								<li><a href="./05_inquiry_delivery.html"><span>납품현황</span></a></li>		
+              </ul>
+						</div>
+					</li>					
+				</ul><!-- PC메뉴 같을때 true / 같지않으면 false 후 메뉴삽입 -->
+				</div>
+				<div class="footer_bottom">
+					<div class="linkbox">
+						<ul>
+							<li><a href="#" target="_blank">사업자정보확인</a></li>
+							<li><a href="#">개인정보처리방침</a></li>
+							<li><a href="#">이메일무단수집거부</a></li>
+							<li><a href="/03_quote.html">견적문의</a></li>
+						</ul>
+					</div>
+					<div class="corp_info">
+						<span>대표이사 : 배수영</span>
+						<span>사업자등록번호 : 705-87-01099</span>
+						<span>주소 : 부산광역시 사상구 괘감로 37, 1동 119호 ~ 121호(괘법동, 산업용품유통상가)</span>
+					</div>
+					<div class="corp_info">
+						<span>대표번호 : 051-319-3111</span>
+						<span>FAX : 051-319-3113</span>
+						<span>이메일 : hbs@hbsolution.kr</span>
+					</div>
+      		<p class="copyright">&copy; <span id="this_year"></span> HBS All Rights Reserved</p>
+					<div class="social">
+						<span>Social</span>
+						<ul>
+							<li><a href="#"><img src="./images/social-1.png" alt="트위터"></a></li>
+							<li><a href="#"><img src="./images/social-2.png" alt="인스타그램"></a></li>
+							<li><a href="#"><img src="./images/social-3.png" alt="페이스북"></a></li>
+							<li><a href="#"><img src="./images/social-4.png" alt="스페이스엑스"></a></li>
+						</ul>
+					</div>
+    </div>
+			</div>
+		</nav>
+		</header>	<!-- //header -->
+
+ 	 <!-- container -->
+		<div id="mainContainer">
+		<!-- ****************** 메인비주얼 ********************** -->
+		<section id="mainVisual" class="full-height move-object-con"><!-- 메인 비주얼 높이 full height  -->
+			<article class="main-visual-con">
+				<div class="main-visual-item first">
+					
+					<div class="main-visual-pc-img" style="background:#000 url(./images/main-bg3.png) no-repeat 50% 50%;"></div>
+					<div class="main-visual-txt-con">
+						<div class="main-visual-txt-box area">
+							<div class="main-visual-txt-inner">
+								<strong class="main-visual-txt1 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">Integrated Control Systems<br>Tailored for Korean Industrial Sites</strong>
+								<p class="main-visual-txt2 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">Start Simulation</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-visual-item">
+					<div class="main-visual-pc-img" style="background:#000 url(./images/main-bg2.png) no-repeat 50% 50%;"></div>
+					<div class="main-visual-txt-con">
+						<div class="main-visual-txt-box area">
+							<div class="main-visual-txt-inner">
+								<strong class="main-visual-txt1 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">Engineering Motion Powering the Future</strong>
+								<p class="main-visual-txt2 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">Precision in Every Turn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-visual-item">
+					<div class="main-visual-pc-img" style="background:#000 url(./images/main-bg1.png) no-repeat 50% 50%;"></div>
+					<div class="main-visual-txt-con">
+						<div class="main-visual-txt-box area">
+							<div class="main-visual-txt-inner">
+								<strong class="main-visual-txt1 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">Integrated Control Systems<br>Tailored for Korean Industrial Sites</strong>
+								<p class="main-visual-txt2 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">Motors You Can Rely On</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<div class="main-customer-progress"><span></span></div>
+			
+			<div class="main-scroll-icon">
+				<span class="txt"></span>
+				<span class="icon"></span>
+			</div>
+		</section>
+		<!-- ****************** 메인컨텐츠 ********************** -->
+			
+					
+		<!-- ****************** 메인컨텐츠 3 (공지사항) ********************** -->
+		<article id="mainCustomerCon" data-scroll>
+
+			<div class="main-customer-con">
+					<div class="main-customer-bg" style="background: url('./images/Component55.png') center/cover no-repeat;"></div>
+					<div class="main-customer-title">
+						<div class="area-wide">
+							<div class="main-tit-box scroll-object" data-scroll="fade">
+								<p class="main-sub-title">Now we are</p>
+								<h3 class="main-tit cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0.5">HBS소식을 확인해보세요</h3>
+							</div>
+							<div class="main-control-box" data-scroll="fade-up">
+								<button type="button" class="main-customer-next"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-customer-wrapper font-score" data-scroll>
+					<ul class="main-customer-list start-autoplay-scroll-object clearfix">
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=269">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;" >
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">25.05.20</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">[매일경제] 북미 반도체 업체에 합성쿼츠 첫 납품 성과 낸 '이 회사' [오늘, 이 종목]</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=268">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;" >
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">25.05.19</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">[한국경제] 비씨엔씨, 북미 반도체업체에 합성쿼츠 첫 납품</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=267">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">25.05.19</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">[뉴시스]비씨엔씨, 북미 글로벌 업체 함성쿼츠 부품 첫PO수주</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/board.php?bgu=view&idx=266">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">보도자료</b><span class="date">25.05.19</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">비씨엔씨,합성쿼츠(QD9+) 해외 복수업체들에 공급_글로벌 확대 기대</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=252">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">25.02.10</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">[연합인포맥스]비씨엔씨, 반도체용 폴리실리콘 제품 북미 양산 공급</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=251">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">25.02.10</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2" >[한경비즈니스]비씨엔씨, 반도체용 폴리실리콘 사업 본격화 북미 반도체 기업 첫 PO 수주</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/board.php?bgu=view&idx=250">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">보도자료</b><span class="date">25.02.10</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">비씨엔씨, 반도체용 Poly Silicon 소재 및 부품 사업 본격화</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=242">
+							 -->
+
+							
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">24.08.27</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">[매일경제]비씨엔씨, 글로벌 반도체 기업에 식각 공정용 부품 공급 [오늘, 이 종목]</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+												<li class="main-customer-item first">
+							<!-- 							<a href="http://bcnc.co.kr/kr/pr/news.php?bgu=view&idx=241">
+							 -->
+
+						
+								<div class="main-customer-inner "OnClick="location.href ='/04_support_news.html'" style="cursor:pointer;">
+									<div class="main-customer-top">
+										<b class="category">뉴스</b><span class="date">24.08.27</span>
+									</div>
+									<div class="main-customer-bottom">
+										<h5 class="tit line-clamp2">[뉴시스]비씨엔씨, CVD-SiC 대체 소재 양산 PO 첫 접수</h5>
+										<img src="./images/Rectangle 94.png" alt="news-img">
+									</div>
+								</div>
+							</a>
+						</li>
+											</ul>
+				</div>
+			
+		</article>
+
+		</section>
+	</div>
+	<!-- //container -->
+	<!-- ****************** 메인컨텐츠 2 (제품소개) ********************** -->
+ 			<article id="mainQuickCon" data-scroll="" >
+				<figure>
+          <img src="./images/background.png" alt="">
+        </figure>
+				<div class="area-box clearfix">					
+					<div class="main-quick-right" style="margin-top: 13.32px;">						
+						<div class="area-wide clearfix">
+							<div class="main-tit-box scroll-object" data-scroll="fade" style="margin-top: 4.44px;">
+								<h3 class="main-tit cm-word-split-JS words chars splitting"data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0.1" style="--word-total: 2; --char-total: 11;">
+  								<!-- hbs -->
+  								<b><span class="word" data-word="hbs" style="--word-index: 0;">										
+  								  	<span class="char point" data-char="h" style="--char-index: 0; animation-delay: 0.1s;">h</span>
+											<span class="char point" data-char="b" style="--char-index: 1; animation-delay: 0.1s;">b</span>
+											<span class="char point" data-char="s" style="--char-index: 2; animation-delay: 0.1s;">s</span>										
+  								</span></b>
+									<!-- Products -->
+  								<span class="word" data-word="Products" style="--word-index: 1;">
+  								  <span class="char" data-char="P" style="--char-index: 3; animation-delay: 0.1s;">P</span>
+  								  <span class="char" data-char="r" style="--char-index: 4; animation-delay: 0.1s;">r</span>
+  								  <span class="char" data-char="o" style="--char-index: 5; animation-delay: 0.1s;">o</span>
+  								  <span class="char" data-char="d" style="--char-index: 6; animation-delay: 0.1s;">d</span>
+  								  <span class="char" data-char="u" style="--char-index: 7; animation-delay: 0.1s;">u</span>
+  								  <span class="char" data-char="c" style="--char-index: 8; animation-delay: 0.1s;">c</span>
+  								  <span class="char" data-char="t" style="--char-index: 9; animation-delay: 0.1s;">t</span>
+  								  <span class="char" data-char="s" style="--char-index: 10; animation-delay: 0.1s;">s</span>
+  								</span>
+								</h3>
+								<p class="main-sub-tit">모터부터 제어시스템까지, 현장에 필요한 모든 제품을 한눈에.<br>하이쎈의 주요 제품 라인업을 지금 확인해보세요.</p>
+								<button onclick="location.href='/02_products_1.html'">View More</button>
+							</div>
+						</div>
+					</div>
+					<div class="main-quick-con">
+						<div class="main-quick-left clearfix" data-scroll="fade-up">
+							<div class="main-quick-wrapper clearfix">
+								<ul class="main-quick-list">
+									<li class="main-quick-item">
+										<a href="/02_products_1.html">
+											<!-- <div class="main-quick-bg" style="background: url(./images/Product1.png) center/cover no-repeat;"></div> -->
+											<div class="main-quick-txt">
+												<h5>효성모터</h5>
+												
+											</div>
+										</a>
+									</li>
+									<li class="main-quick-item">
+										<a href="/02_products_2.html">
+											<div class="main-quick-bg" style="background: url(./images/Product2.png) center/cover no-repeat;"></div>
+											<div class="main-quick-txt">
+												<h5>ABB</h5>
+												
+											</div>
+										</a>
+									</li>
+									<li class="main-quick-item">
+										<a href="/02_products_3.html">
+											<div class="main-quick-bg" style="background: url(./images/Product3.png) center/cover no-repeat;"></div>
+											<div class="main-quick-txt">
+												<h5>윌로펌프</h5>
+												
+											</div>
+										</a>
+									</li>
+									<li class="main-quick-item">
+										<a href="/02_products_4.html">
+											<div class="main-quick-bg" style="background: url(./images/Product4.png) center/cover no-repeat;"></div>
+											<div class="main-quick-txt">
+												<h5>그런포스펌프</h5>
+												
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+	<!-- 견적 계산기 -->
+	<div class="quote-wrapper">
+  <figure>
+    <img src="/images/motorbackground.png" alt="">
+  </figure>
+	 <!-- 왼쪽부분 -->
+  <div class="quote-calculator">
+    <h2 class="quote-title">Quick & Easy Pricing Tool</h2>
+		<p class="sub-tit">자동견적 계산기</p>
+    <label for="quote-product">제품명</label>
+    <select id="quote-product">
+      <option value="0">제품을 선택하세요</option>
+      <option value="10000">효성모터 - 100,000원</option>
+      <option value="20000">ABB - 200,000원</option>
+      <option value="30000">윌로펌프 - 300,000원</option>
+      <option value="40000">그런포스펌프 - 400,000원</option>
+      <option value="50000">DANFOSS - 500,000원</option>
+      <option value="60000">감속기 - 600,000원</option>
+      <option value="70000">자동제어판넬 - 700,000원</option>
+    </select>
+
+    <div class="quote-row">
+      <div>
+        <label for="quote-spec1">선택하세요</label>
+        <select id="quote-spec1">
+          <option value="0">출력, 전압, 회전수</option>
+          <option value="3000">고출력 (+3,000원)</option>
+        </select>
+      </div>
+      <div>
+        <label for="quote-spec2">선택하세요</label>
+        <select id="quote-spec2">
+          <option value="0">kW, V, RPM</option>
+          <option value="4000">고RPM (+4,000원)</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="quote-quantity">수량</label>
+    <input type="number" id="quote-quantity" min="1" value="1">
+
+    <div class="quote-result" id="quote-total">총 견적: 0원</div>
+  </div>
+
+  <!-- 오른쪽: 안내 문구 + 버튼 -->
+	
+  <div class="quote-side">
+    <p class="quote-side-text">
+      필요한 제품이 있으신가요?<br>
+      간단한 정보만 입력하시면,
+      빠르게 맞춤 견적을 드립니다.
+    </p>
+    <button class="quote-button" onclick="location.href='/03_quote.html'">
+      견적문의하기
+    </button>
+  </div>
+</div>
+<!-- footer -->
+		<footer id="footer" class="font-score">
+		<button class="to-top-btn"><em class="blind">TOP</em><i class="xi-arrow-up"><span class="material-symbols-outlined">stat_3</span></i></button>
+		<!-- 푸터 상단 -->
+		<article id="footerTop">
+			<div class="area-wide clearfix">
+				<!-- 푸터상단 왼쪽 -->
+				<div class="footer-left-con">
+					<span class="foot-logo"><img src="./images/logo(orange).svg" alt="비씨엔씨" /></span>
+
+					<div class="footer-address">
+						<div class="footer-address-txt">
+							<p>사업자정보확인</p>
+							<p>개인정보처리방침</p>
+							<p>이메일무단수집거부</p>
+							<p onclick="location.href='/03_quote inquiry.html'" style="cursor:pointer;" >견적문의 </p>
+						</div>
+					</div>
+				</div>
+				<!-- 푸터중간 -->
+				<div class="footer-mid">
+					<div class="footer-mid-txt">
+						<ul>
+							<li>대표이사 : 배수영</li>
+							<li>사업자등록번호 : 705-87-01099</li>
+							<li>주소 : 부산광역시 사상구 괘감로 37, 1동 119호 ~ 121호(괘법동, 산업용품유통상가)</li>
+							<li>대표번호 : 051-319-3111</li>
+							<li>FAX : 051-319-3113</li>
+							<li>이메일 : hbs@hbsolution.kr</li>
+						</ul>
+						<div class="sns">
+						<ul class="social">
+							<li><a href="#"><img src="./images/social-1.png" alt="social1"></a></li>
+							<li><a href="#"><img src="./images/social-2.png" alt="social2"></a></li>
+							<li><a href="#"><img src="./images/social-3.png" alt="social3"></a></li>
+							<li><a href="#"><img src="./images/social-4.png" alt="social4"></a></li>
+						</ul>
+						</div>
+					</div>
+					<div class="dropdown_box">
+						<div class="family_site link_list">
+							<button type="button" class="link_open" title="열기">FAMILY SITE</button>
+							<ul>
+								<li><a href="/01_about_greeting.html" target="_blank" title="새창">회사소개</a></li>
+								<li><a href="/02_products_1.html" target="_blank" title="새창">제품소개</a></li>
+								<li><a href="/03_quote.html" target="_blank" title="새창">견적문의</a></li>
+								<li><a href="/04_support_FAQ.html" target="_blank" title="새창">고객지원</a></li>
+								<li><a href="/05_inquiry_contact.html" target="_blank" title="새창">문의/납품현황</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					<!-- 푸터하단 -->
+					 
+				</div>
+				<div class="copy">
+						<p>&copy; <span id="this_year"></span> hbs All Rights Reserved</p>
+					 </div>
+			
+		</article>
+	</footer>	
+	<!-- //footer -->
+
+</body>
+</html>
+	</section>
+  </div>
+
+
+  <script>
+	dep1 = 0,
+	dep2 = 0;
+</script>
+
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./js/splitting.min.js"></script>
+	<script type="text/javascript" src="./js/waypoints.min.js"></script>
+	<script type="text/javascript" src="./js/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="./js/smoothScroll.js"></script>
+	<script type="text/javascript" src="/js/plugin/countUp.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="./js/functions.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/layer_popup.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/js/vendor/html5shiv.js"></script>
+		<script src="/js/vendor/respond.min.js"></script>
+	<![endif]--><script type="text/javascript" src="./js/main.js"></script>
+	
+</body>
+</html>

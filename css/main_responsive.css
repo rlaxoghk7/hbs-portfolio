@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : main_responsive.css
+ * description : 메인 레이아웃 및 컨텐츠 반응형 CSS
+ * date : 2020-11-25
+******************************************************** */
+
+/* ******************  메인 비주얼 ********************** */
+@media all and (max-width:1650px){
+	.main-visual-prd-inner{margin-right: 0;}
+	.main-visual-dot{left: 7%;}
+}
+@media all and (max-width:1440px) {
+	.main-visual-txt-inner {padding-bottom: 0; margin-top: 150px;}
+	.main-visual-txt-con .main-visual-txt1 {font-size: 72px;}
+}
+@media all and (max-width:1408px){
+	.main-visual-dot{left: 6%;}
+	
+}
+@media all and ( max-width: 1366px ){
+	.main-visual-txt-inner{max-width: none;}
+	.main-visual-prd-box{align-items: flex-end;}
+	.main-visual-dot{top: 37%; margin-top: -60px;}
+	/* 메인 비주얼 :: 스크롤아이콘 */
+	.main-scroll-icon{display:none;}
+}
+@media all and ( max-width: 1220px ){
+	.main-visual-txt-con .main-visual-txt1 {font-size: 60px;}
+	.main-visual-dot{left: 7%;}
+}
+@media all and ( max-width: 1024px ){
+	.main-visual-txt-inner{padding-bottom: 0px;}
+	.main-visual-txt-con .main-visual-txt1 {font-size: 60px;}
+	.main-visual-txt-box{width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box;}
+	.main-visual-prd-inner{width: 60%; margin-top: 0;}
+	.main-visual-prd-box{padding-bottom: 10% !important; -webkit-box-sizing: border-box; box-sizing: border-box;}
+	.main-visual-dot{top: 65%; margin-top: -30px;}
+}
+@media all and ( max-width: 800px ){
+	#mainVisual:before{top: -140px; right: -198px; width: 198px; height: 140px;}
+	#mainVisual:after{bottom: -150px; left: -148px; width: 148px; height: 150px;}
+
+
+	
+	/* 메인 비주얼 :: 텍스트 */
+	
+	.main-visual-txt-con .main-visual-txt1{font-size:45px; margin-bottom:20px;}
+	.main-visual-txt-con .main-visual-txt2{font-size:16px;}
+	/* 메인 비주얼 :: 제품 이미지 */
+	.main-visual-prd-box{padding-bottom: 35% !important;}
+	.main-visual-prd-inner{width: 80%;}
+	/* 메인 비주얼 :: Dots */
+	.main-visual-dot{top: 60%; margin-top: -35px;}
+	.main-visual-dot .dot-cover{width: 50px; height: 50px;}
+	.main-visual-dot .dot-cover svg.pc-ver{display: none;}
+	.main-visual-dot .dot-cover svg.m-ver{display: block;}
+	/* 메인 비주얼 :: pause,play */
+	.main-visual-dot .slick-control-btns{position: absolute; top: 50%; left: 50%; margin-top: -10px; margin-left: -10px; display:inline-block; vertical-align:top; z-index: 99;}
+	.main-visual-dot .slick-control-btns button{color:#fff; vertical-align:top;}
+	.main-visual-dot .slick-control-btns button i{vertical-align:top; font-size:16px;}
+	.main-visual-dot .slick-control-btns .slick-play-btn{display:none;}
+}
+@media all and ( max-width: 500px ){
+.main-visual-txt-con .main-visual-txt1{font-size:36px;}
+.main-visual-txt-con .main-visual-txt2{font-size:14px;}
+}
+/* ******************  메인 컨텐츠 ********************** */
+/* -------- 메인 컨텐츠 :: 공통 -------- */
+@media all and (max-width:1536px){
+	#mainContent{background-position-y: 520px; background-size: 36.78%;}
+}
+@media all and (max-width:1024px){
+	#mainContent{background-position-y: 820px; background-size: 41.78%;}
+}
+@media all and ( max-width: 800px ){
+	#mainContent{background-position-y: 720px;}
+	.main-tit-box .main-sub-title{font-size:15px;}
+	.main-tit-box .main-tit{margin-top: 10px; font-size:36px;}
+}
+
+
+/* -------- 메인 컨텐츠 :: 컨텐츠1(회사소개) -------- */
+@media all and (max-width:1536px){
+	.main-company-top{padding-top: 615px;}
+	/* 왼쪽 - 주가정보 */
+	.main-company-left{width: 100%;}
+	/* 오른쪽 - 설립일,매출액,임직원 */
+	.main-company-right {width: 100%;}
+}
+@media all and (max-width:1024px){
+	#mainCompanyCon{padding-top: 0; padding-bottom: 180px;}
+	.main-company-con{padding: 0 !important;}
+	.main-company-item{width: 100%; height: auto;}
+	.main-company-inner {padding: 55px 8% 50px; display: flex; align-items: center;}
+	.main-company-inner .top,
+	.main-company-inner .bottom{width: 50%;}
+	.main-company-inner .bottom{margin-top: 0;}
+}
+@media all and (max-width:800px){
+	#mainCompanyCon{padding:0 0 115px;}
+	.main-company-top{padding-top: 495px;}
+	.main-company-top .main-tit-box{top: 18.75%; left: 6%;}
+	.main-company-top .main-tit-box .main-tit{margin-top: 5px;}
+	.main-company-bottom{width: 88%; margin-top: -80px;}
+	/* 왼쪽 - 주가정보 */
+	.main-company-left-inner{padding: 30px 8% 25px;}
+	.main-company-left-inner .top{position: relative; padding-right: 125px;}
+	.main-company-left-inner .top p{font-size: 15px;}
+	.main-company-left-inner .top a{top: 5px; font-size: 12px;}
+	.main-company-left-inner .top a:before{right: 80px; width: 20px;}
+	.main-company-left-inner .middle{margin-top: 10px;}
+	.main-company-left-inner .middle .num{font-size: 30px;}
+	.main-company-left-inner .middle i{margin-left: 10px; font-size: 15px;}
+	.main-company-left-inner .bottom{margin-top: 15px;}
+	.main-company-left-inner .bottom dl{margin: 5px 0; width: 50%; font-size: 15px;}
+	.main-company-left-inner .bottom dt{width: 80px;}
+	.main-company-left-inner .bottom dd{width: calc(100% - 80px);}
+	/* 오른쪽 - 설립일,매출액,임직원 */
+	.main-company-inner {padding: 30px 8% 25px;}
+	.main-company-inner .top p{font-size: 15px;}
+	.main-company-inner .num-group{margin-top: 10px; font-size: 15px;}
+	.main-company-inner .num-group .num{font-size: 30px;}
+	.main-company-inner .bottom p{font-size: 14px;}
+}
+
+
+/* -------- 메인 컨텐츠 :: 컨텐츠2(퀵메뉴) -------- */
+@media all and (max-width:1650px){
+	.main-quick-right .main-tit-box {width: 38%;}
+	.main-quick-left {width: calc(62% - 60px);}
+	#mainQuickCon .main-tit{font-size: 90px;}
+}
+/* @media all and (max-width:1520px){
+	#mainQuickCon .main-tit{font-size: 80px;}
+} */
+@media all and (max-width:1440px){
+	#mainQuickCon .main-tit{font-size: 64px;}
+	.main-tit-box {padding-right: 0px;}
+}
+@media all and (max-width:1400px){
+	.main-quick-right {top: -60px;}
+	.main-quick-item:nth-child(1) {width: 150px; height: 200px;}
+	.main-quick-item:nth-child(2) {width: 300px; height: 200px;}
+	.main-quick-item:nth-child(3) {width: 300px; height: 200px;}
+	.main-quick-item:nth-child(4) {width: 150px; height: 200px;}
+	#mainQuickCon .main-tit-box .main-sub-tit {font-size: 16px;}
+}
+/* @media all and (max-width:1220px){
+	.area-box {padding: 0 50px;	}
+	.main-quick-wrapper {padding: 0 26px;}
+	.main-quick-right {top: -10px;}
+	.main-quick-right .main-tit-box {width: 45%;}
+	.main-quick-left {width: calc(58% - 60px);}
+	.main-quick-right .area-wide{padding: 0;}
+} */
+
+/* @media all and (max-width:1024px){
+	#mainQuickCon {margin: 50px 0;}
+	#mainQuickCon figure {top: 0; right: 0;}
+	.area-box {display: flex; flex-direction: column;}
+	.main-quick-wrapper {margin: 50px auto 100px; padding: 0px; grid-template-columns: repeat(2, auto); justify-content: center; align-items: center;}
+	.main-quick-con{height: auto;}
+	.main-quick-right{position: static; width: 100%;}
+	.main-quick-right .main-tit-box{width: 100%; margin: 0 auto;}
+	.main-quick-left{margin: 0 auto; width: 100%;}
+	.main-quick-list{position: relative; float: left;}
+	.main-quick-list.list01{top: 90px;}
+	.main-quick-list.list02{top: 240px; float: right;}
+	.main-quick-item:nth-child(1) {width: 300px; height: 200px; grid-area: 1 / 1 / 2 / 2;}
+	.main-quick-item:nth-child(2) {width: 300px; height: 200px; grid-area: 1 / 2 / 2 / 3;}
+	.main-quick-item:nth-child(3) {width: 300px; height: 200px; grid-area: 2 / 1 / 3 / 3;}
+	.main-quick-item:nth-child(4) {width: 300px; height: 200px; grid-area: 2 / 2 / 3 / 2;}
+	.main-quick-txt h5 {font-size: 20px; display: inline-block; background-color: rgba(0, 0, 0, .3); padding: 3px 5px; color: #f6f6f6; font-weight: 500;}
+	#mainQuickCon .main-tit-box .main-sub-tit {font-size: 16px;}
+} */
+@media all and (max-width:800px){
+	#mainQuickCon {margin-top: 150px;}
+	#mainQuickCon figure {top: -120px; left: -100px;}
+	#mainQuickCon .main-tit-box .main-tit,
+	#mainQuickCon .main-tit em{font-size: 60px;}
+	#mainQuickCon .main-tit em:before, #mainQuickCon .main-tit em:after{width: 300px; font-size: 16px;}
+	#mainQuickCon .main-tit em:before{top: 17px; left: 50px;}
+	#mainQuickCon .main-tit em:after{top: 37px; left: 50px;}
+	#mainQuickCon .main-tit-box .main-sub-title{margin-top: 15px; font-size: 16px;}
+
+	.main-quick-left{}
+	.main-quick-list.list01{top: 40px;}
+	.main-quick-list.list02{top: 140px;}
+	.main-quick-item{margin-top: 30px;}
+	.main-quick-txt{left: 10%;}
+	.main-quick-list.list01 .main-quick-txt{bottom: 7%;}
+	.main-quick-list.list02 .main-quick-txt{top: 7%;}
+	.main-quick-txt h5{font-size: 20px;}
+	.main-quick-txt p{margin-top: 10px; font-size: 12px;}
+}
+@media all and (max-width:700px) {
+.main-quick-wrapper {margin: 30px auto 90px;}
+.main-quick-item:nth-child(1) {width: 250px; height: 180px;}
+.main-quick-item:nth-child(2) {width: 250px; height: 180px;}
+.main-quick-item:nth-child(3) {width: 250px; height: 180px;}
+.main-quick-item:nth-child(4) {width: 250px; height: 180px;}
+}
+@media all and (max-width:600px) {
+	#mainQuickCon {margin-top: 50px;}
+	#mainQuickCon figure {top: -160px; left: -150px;}
+}
+@media all and (max-width:550px) {
+	#mainQuickCon {margin-top: 0px;}
+	#mainQuickCon figure {top: -85px; left: -150px;}
+	#mainQuickCon figure img {width: 800px; height: 800px;}
+
+#mainQuickCon .main-tit-box .main-tit {font-size: 48px; font-weight: 900;}
+#mainQuickCon .main-tit-box .main-sub-tit {font-size: 12px; margin: 10px;}
+#mainQuickCon .main-tit-box button {font-size: 12px;}
+.main-quick-wrapper{gap: 10px; grid-template-columns: repeat(2, 1fr); margin: 0px auto 50px;}	
+.main-quick-item {border-radius: 10px;}
+.main-quick-item:nth-child(1) {width: 200px; height: 150px;}
+.main-quick-item:nth-child(2) {width: 200px; height: 150px;}
+.main-quick-item:nth-child(3) {width: 200px; height: 150px;}
+.main-quick-item:nth-child(4) {width: 200px; height: 150px;}
+
+}
+@media all and (max-width:450px) {
+#mainQuickCon figure {top: -150px; left: -150px;}
+#mainQuickCon .main-tit-box .main-tit	{font-size: 32px; font-weight: 900;}
+.main-quick-item:nth-child(1) {width: 150px; height: 100px;}
+.main-quick-item:nth-child(2) {width: 150px; height: 100px;}
+.main-quick-item:nth-child(3) {width: 150px; height: 100px;}
+.main-quick-item:nth-child(4) {width: 150px; height: 100px;}
+.main-quick-txt h5 {font-size: 12px;}
+}
+
+
+
+/* -------- 메인 컨텐츠 :: 컨텐츠3(공지사항) -------- */
+@media all and (max-width:1800px) {
+	.main-customer-title .area-wide {padding: 70px 60px;}
+	.main-tit-box .main-sub-title {font-size: 72px;}
+	#mainCustomerCon .main-tit-box .main-tit {font-size: 30px;}
+	.main-control-box {padding-left: 350px;}
+}
+
+@media all and (max-width:1700px) {
+	#mainCustomerCon .main-tit-box {padding-bottom: 120px;}
+}
+
+@media all and (max-width:1600px) {
+	.main-customer-title .area-wide {padding: 70px 60px;}
+}
+
+/* @media all and (max-width:1535px){
+	.main-customer-wrapper{width: 55%;}
+	.main-customer-con {margin-top: 0;}
+	.main-control-box {margin-top: 70px; padding-left: 400px;}
+} */
+@media all and (max-width:1440px){
+	.main-customer-wrapper{width: 60%;}
+	.main-customer-con{padding-top: 65%;}
+	#mainCustomerCon .main-tit-box .main-tit{font-size: 36px;}
+	.main-control-box {padding-bottom: 90px; padding-left: 300px;}
+}
+@media all and (max-width:1240px) {
+	.main-tit-box .main-sub-title {font-size: 56px;}
+	#mainCustomerCon .main-tit-box .main-tit {font-size: 24px;}
+	.main-control-box button {width: 48px; height: 48px;}
+	.main-control-box button i {font-size: 20px;}
+	.main-control-box {padding-left: 250px;}
+}
+
+@media all and (max-width:1200px){
+	#mainCustomerCon .main-tit-box {padding-bottom: 320px;}
+	.main-customer-con{padding-top: 1000px; margin-top: 50px;}
+	.main-customer-title{bottom: 300px; width: 100%;}
+	.main-control-box{margin-top: 95px; display: none;}
+	.main-customer-progress{width: 280px;}
+	.main-customer-wrapper{width: 90%; left: 0; margin: auto;}
+	
+	.main-customer-list {margin: 100px -43px;}
+	
+}
+@media all and (max-width:900px) {
+	.main-customer-title {bottom: 160px;}
+	.main-customer-con {padding-top: 850px; margin-top: 0;}
+}
+
+@media all and (max-width:800px){
+	#mainCustomerCon{padding-bottom: 150px;}
+	.main-customer-con{padding-top: 700px;}
+	#mainCustomerCon .main-tit-box .main-tit{margin-top: 10px; font-size: 40px;}
+	.main-control-box{margin-top: 60px; font-size: 0;}
+	.main-control-box button{width: 55px; height: 55px;}
+	.main-control-box button i{position: relative; top: 2px; font-size: 24px; color: #000;}
+	.main-customer-title{bottom: 40px;}
+	.main-customer-bottom .tit {max-width: 100%;}
+	.main-customer-progress{margin-left: 20px; width: calc(100% - 140px);}
+	
+	#mainCustomerCon .main-tit-box {padding-bottom: 280px;}
+	.main-customer-item{width: calc(70% - 30px); height: 560px !important;}
+	.main-customer-item a{height: 300px;}
+	.main-customer-item a:before{bottom: 6%; left: 6%; font-size: 22px;}
+	.main-customer-inner{padding: 6% 6% 0;}
+	.main-customer-top{padding-bottom: 20px;}
+	.main-customer-top .category{margin-right: 10px; font-size: 14px;}
+	.main-customer-top .date{font-size: 13px;}
+	.main-customer-bottom .tit{font-size: 22px;}
+	.main-customer-bottom .txt{margin-top: 20px; font-size: 17px;}
+	
+	
+}
+@media all and (max-width:700px) {
+	.main-customer-item{height: 520px !important;}
+
+}
+
+@media all and (max-width:640px){
+	.main-customer-item{height: 490px !important;}
+	.main-customer-item a:before{bottom: 10%; left: 10%; font-size: 22px;}
+	.main-customer-inner{padding: 5% 5% 0;}
+	.main-customer-bottom .tit {font-size: 18px;}
+} 
+@media all and (max-width:600px) {
+	.main-customer-item{height: 450px !important;}
+}
+@media all and (max-width:550px) {
+	.main-customer-item {height: 430px !important;}
+}
+@media all and (max-width:500px) {
+	.main-customer-con {padding-top: 850px;}
+	.main-customer-item {height: 410px !important;}
+	.main-customer-title {bottom: 160px;}
+	.main-customer-list {margin: 50px -43px;}
+	#mainCustomerCon {padding-bottom: 20px;}
+	.main-customer-bg {height: 80%;}
+	#mainCustomerCon .main-tit-box {padding-bottom: 360px;}
+	#mainCustomerCon .main-tit-box .main-tit {font-size: 24px; font-weight: 400;}
+	
+}
+@media all and (max-width:453px) {
+	.main-tit-box .main-sub-title {font-size: 46px;}
+	#mainCustomerCon .main-tit-box .main-tit {font-size: 20px;}
+	.main-customer-item {height: 390px !important;}
+}
+@media all and (max-width:420px) {
+	.main-customer-item {height: 390px !important;}
+}
+@media all and (max-width:400px) {
+	.main-customer-item {height: 360px !important;}
+}
+@media all and (max-width:394px) {
+	.main-tit-box .main-sub-title {font-size: 40px;}
+	#mainCustomerCon .main-tit-box {padding-bottom: 380px;}
+	#mainCustomerCon .main-tit-box .main-tit {font-size: 16px;}
+	
+}
+
+
+	/* ****견적계산기***** */
+
+@media all and (max-width:1200px) {
+	.quote-wrapper {flex-direction: column; justify-content: center; align-items: center; gap: 10px;}
+	.quote-side {max-width: 500px; margin-top: 0px; border: none; box-shadow: none;}
+	.quote-side-text {font-size: 20px;}
+}
+
+@media all and (min-width:861px) {
+	.quote-calculator {
+  	display: flex;
+		flex-direction: column;
+		width: 600px;
+  	max-width: 100%;
+  	padding: 30px;
+  }
+}
+@media all and (max-width:860px) {
+	.quote-calculator {width: 100%; padding: 0;}
+}
+@media all and (max-width:800px) {
+	.input{width: 98%;}
+	.quote-side{margin-top: 20px;}
+}
+
+@media all and (max-width:670px) {
+	.quote-wrapper {padding: 50px 20px 100px}
+	.quote-side-text {font-size: 18px;}
+	.quote-calculator select, .quote-calculator input {font-size: 14px;}
+	.quote-result {font-size: 18px;}
+}
+
+@media all and (max-width:500px) {
+	.quote-row {flex-direction: column; gap: 0;}
+	.quote-side-text {font-size: 14px;}
+	.quote-button {font-size: 12px; padding: 10px 15px;}
+}
+@media all and (max-width:450px) {
+.quote-title {font-size: 28px; margin-bottom: 24px;}
+.quote-calculator .sub-tit {font-size: 20px;}
+}
+@media all and (max-width:400px) {
+	
+	.quote-calculator select, .quote-calculator input {font-size: 12px;}
+	.quote-result {font-size: 16px;}
+}

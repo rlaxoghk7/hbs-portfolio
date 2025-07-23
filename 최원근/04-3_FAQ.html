@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBS</title>
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/language.css" /><!-- 해당언어에서만 사용하는 css -->
+  <link rel="stylesheet" href="./css/layout_responsive.css">
+  <link rel="stylesheet" href="./css/content_responsive.css">
+  <link rel="stylesheet" href="./css/main_responsive.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- XEicon -->
+	
+  <!-- Board Skin -->
+  <link rel="stylesheet" href="./css/cm_bbs_common.css">
+  <link rel="stylesheet" href="./css/cm_board.css">
+  <link rel="stylesheet" href="./css/cm_gallery.css"/>
+  <link rel="stylesheet" href="./css/cm_history.css">
+  <link rel="stylesheet" href="./css/cm_certification.css" />
+  <link rel="stylesheet" href="./css/cm_faq.css" />
+  <link rel="stylesheet" href="./css/04-3_FAQ.css">
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./css/swiper.css" />
+  <!--[if lte IE 9]>
+  	<link rel="stylesheet" href="/css/ie9.css">
+  <![endif]-->
+  <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+  <script>
+	 //  5번째  대메뉴 인덱스
+		dep1 = 5	
+		
+	// dep1 = 05,
+	dep2 = 01;
+
+	// sub2_num 변수가 있을때 ( 3차메뉴 )
+				dep3 = "";
+	</script>
+</head>
+   <header id="header" class="top-fixed-object"><!-- .top-fixed가 붙는 object에 top-fixed-object 클래스 추가  -->
+		</header>	
+<!-- //top_menu -->
+<!-- <script>
+ fetch('/inc/top_menu.html')
+   .then(res => res.text())
+   .then(html => {
+     document.querySelector('#header').innerHTML = html;
+   });
+</script> -->
+
+
+<body>
+  <!-- 상단 비주얼 영역 -->
+  <section id="visual" class="sub-visual-business">
+			<div class="visual-img-con" style="background:#f5f5f5 url(./images/iquery_visual.png) no-repeat 50% 0%"></div>
+			<div class="area visual-txt-con">
+				<div class="table-cell-layout">
+					<div class="visual-txt-container">
+						<h2 class="visual-tit cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">문의현황</h2>
+					</div>
+				</div>				
+			</div>
+		</section>
+    			<!-- ****************** 서브메뉴 ********************** -->
+						<!-- 서브메뉴 2 -->
+			<aside id="topMenu02" class="">
+				<aside id="topMenu02" class="">
+				<div class="side-menu-inner">
+					<div class="area">
+						<ul class="snb sub-menu-business clearfix ">
+              <li><a href="./05_inquery.html"><span>문의현황</span></a></li>
+              <li><a href="./06_delivery_status.html"><span>납품현황</span></a></li>
+					</div>
+				</div>
+			</aside>
+			</aside>
+			<!-- // -->
+
+			<!-- 모바일 서브메뉴 1 -->
+			<aside id="topMenuM01" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home-o"></i></a>
+					<!-- 1차메뉴 -->
+					<div class="menu-location location1 cm-drop-menu-box-JS font-noto" data-drop-event="click">
+						<button class="cur-location cm-drop-open-btn-JS">
+							<span>BUSINESS</span>
+							<i class="xi-angle-down-min arrow"></i>
+						</button>
+						<ul class="location-menu-con cm-drop-list-JS">
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">제품소개</a></li>
+							<li><a href="./03_quote inquiry.html">견적문의</a></li>
+							<li><a href="#">고객지원</a></li>
+							<li><a href="./06_delivery_status.html">문의/납품현황</a></li>
+						</ul>
+					</div>
+					<!-- 2차메뉴 -->
+					<div class="menu-location  location2 cm-drop-menu-box-JS font-noto" data-drop-event="click">
+						<button class="cur-location cm-drop-open-btn-JS">
+							<span>천연쿼츠</span>
+							<i class="xi-angle-down-min arrow"></i>
+						</button>
+						<ul class="location-menu-con cm-drop-list-JS">
+              <li><a href="./06_delivery_status.html"><span>납품현황</span></a></li>
+								<li><a href="./05_inquery.html"><span>문의현황</span></a></li>
+            </ul>
+					</div>
+				</div>
+			</aside>
+			<!-- // -->
+
+
+<body>
+  <div class="success-container">
+    <h1>FAQ</h1>
+    <p class="message">
+      문의하신 내용이 <span class="highlight">정상적으로 접수</span>되었습니다.
+    </p>
+
+    <div class="icon">
+      <i class="fa-solid fa-user-check" style="color: #ffa200;"></i>
+    </div>
+
+    <a href="./04-FAQ_.html" class="back-button">목록으로</a>
+  </div>
+</body>
+
+<!-- <footer id="footer" class="font-score"></footer>
+<script>
+  fetch('/inc/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.querySelector('#footer').innerHTML = html;
+      const script =document.createElement('script');
+      script.src = './js/main.js';
+      document.body.appendChild(script);
+    });
+		</script> -->
+	
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./js/splitting.min.js"></script>
+	<script type="text/javascript" src="./js/waypoints.min.js"></script>
+	<script type="text/javascript" src="./js/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="./js/smoothScroll.js"></script>
+	<!-- <script type="text/javascript" src="/js/plugin/countUp.min.js"></script> -->
+	<script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="./js/functions.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/layer_popup.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
+  <script type="text/javascript" src="./js/04-3_FAQ.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/js/vendor/html5shiv.js"></script>
+		<script src="/js/vendor/respond.min.js"></script>
+	<![endif]--><script type="text/javascript" src="./js/sub.js"></script>

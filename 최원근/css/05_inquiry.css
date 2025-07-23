@@ -1,0 +1,113 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 40px 20px;
+  color: #222;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.search-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-area input {
+  width: 300px;
+  padding: 10px;
+
+  border-radius: 4px;
+}
+
+.search-area button {
+  padding: 10px 20px;
+  border: 1px solid #ff6600;
+  background: white;
+  color: #ff6600;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-area button:hover {
+  background: #ff6600;
+  color: white;
+}
+
+.summary {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.faq-item { 
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.faq-box{
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 15px;
+}
+
+.faq-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.faq-label {
+  font-weight: bold;
+  width: 20px;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+
+.faq-label.q {
+  color: #000;
+}
+
+.faq-label.a {
+  color: #000;
+}
+
+.faq-content {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.faq-content a {
+  text-decoration: none;
+  color: #333;
+}
+
+.faq-content a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}

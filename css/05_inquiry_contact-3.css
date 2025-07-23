@@ -1,0 +1,103 @@
+body {
+  background: #fff;
+  margin: 0 auto;
+  padding: 0;
+  color: #333;
+}
+.quote-form {max-width: 1400px; margin: 0 auto; padding: 100px ;}
+#contentInfoCon p {font-size: 30px; line-height: 38px; font-weight: 600; margin-top: 50px;}
+#contentInfoCon p span {color: #e65100;}
+.readonly-form {
+  margin: 0 auto;
+}
+
+.readonly-form h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+.readonly-form label {position: relative;}
+.readonly-form label::after {content:''; position: relative; width: 5px; height: 5px; display: block; border-radius: 100%; background-color: #356690; top: -12px;left: -14px;}
+
+.form-group, .form-group-text {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group label, .form-group-text label {
+ font-weight: 700;
+  font-size: 22px;
+  cursor: auto;
+  padding: 0px 0px 10px 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group-text input,
+.form-group-text select,
+.form-group-text textarea {
+  padding: 12px 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #666;
+  outline: none;
+  background-color: #f7f7f7;
+}
+
+.form-actions {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.btn.cancel {
+  background: #e65100;
+  color: #f6f6f6;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media all and ( max-width: 1100px ) {
+  .form-group label {font-size: 20px;}
+  .form-group input, .form-group textarea {font-size: 13px; padding: 10px 15px;}
+  .form-actions {margin-top: 80px;}
+  .form-group textarea {line-height: 1.5;}
+}
+
+@media all and ( max-width: 1000px ) {
+  #contentInfoCon p {font-size: 18px;}
+}
+@media all and ( max-width: 800px ) {
+  #contentInfoCon p {font-size: 16px; line-height: 1.5rem; margin-top: 0px;}
+  .form-group {margin-bottom: 20px;}
+  .form-group label {font-size: 16px; margin-bottom: 0px; padding: 0 0 5px 20px;}
+  .form-group input, .form-group textarea {font-size: 12px; padding: 8px 12px; }
+  .btn.cancel {font-size: 12px; padding: 8px 16px;}
+  textarea {height: 100px;}
+
+}
+
+@media all and ( max-width: 600px ) {
+  .quote-form {padding: 50px 5%;}
+  #contentInfoCon .content-tit {font-size: 40px;}
+  #contentInfoCon p {font-size: 14px;}
+  .form-group label {font-size: 14px;}
+  .readonly-form label::after {top: -10px;}
+  .form-group input {padding: 5px 10px; font-size: 11px;}
+  .form-group textarea {padding: 10px 16px; font-size: 11px;}
+  .form-actions {margin-bottom: 50px; margin-top: 50px;}
+}
+@media all and ( max-width: 450px ) {
+  #contentInfoCon .content-tit {font-size: 30px;}
+  #contentInfoCon p {font-size: 12px; line-height: 1.5rem; margin: 30px 0 60px;} 
+  .form-group {margin-bottom: 15px;}
+  .form-group label {font-size: 12px; padding-left: 18px;}
+  .form-group input {font-size: 10px;}
+  .form-group textarea {font-size: 10px;}
+}

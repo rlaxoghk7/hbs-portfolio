@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBS</title>
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/language.css" /><!-- 해당언어에서만 사용하는 css -->
+  <link rel="stylesheet" href="./css/layout_responsive.css">
+  <link rel="stylesheet" href="./css/content_responsive.css">
+  <link rel="stylesheet" href="./css/main_responsive.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- XEicon -->
+	
+  <!-- Board Skin -->
+  <link rel="stylesheet" href="./css/cm_bbs_common.css">
+  <link rel="stylesheet" href="./css/cm_board.css">
+  <link rel="stylesheet" href="./css/cm_gallery.css"/>
+  <link rel="stylesheet" href="./css/cm_history.css">
+  <link rel="stylesheet" href="./css/cm_certification.css" />
+  <link rel="stylesheet" href="./css/cm_faq.css" />
+  <link rel="stylesheet" href="./css/03_quote inquiry.css">
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./css/swiper.css" />
+  <!--[if lte IE 9]>
+  	<link rel="stylesheet" href="/css/ie9.css">
+  <![endif]-->
+  <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+  <script>
+		//   3번째  대메뉴 인덱스
+		dep1 = 3
+		
+	// dep1 = 03,
+	dep2 = 01;
+
+	// sub2_num 변수가 있을때 ( 3차메뉴 )
+				dep3 = "";
+	</script>
+</head>
+   <header id="header" class="top-fixed-object"><!-- .top-fixed가 붙는 object에 top-fixed-object 클래스 추가  -->
+		</header>	
+<!-- //top_menu -->
+<!-- <script>
+ fetch('./inc/top_menu.html')
+   .then(res => res.text())
+   .then(html => {
+     document.querySelector('#header').innerHTML = html;
+   });
+</script> -->
+
+
+<body>
+  <!-- 상단 비주얼 영역 -->
+  <section id="visual" class="sub-visual-business">
+			<div class="visual-img-con" style="background:#f5f5f5 url(./images/quote-visual.png) no-repeat 50% 0%"></div>
+			<div class="area visual-txt-con">
+				<div class="table-cell-layout">
+					<div class="visual-txt-container">
+						<h2 class="visual-tit cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">견적문의</h2>
+					</div>
+				</div>				
+			</div>
+		</section>
+
+  <!-- 견적문의 폼 -->
+  <section class="quote-form">
+    <h2>견적문의</h2>
+    <p class="lead">문의 주시면 <span class="highlight">담당자가 자세하게 안내</span>해드립니다.</p>
+    <p class="sub">산업 현장에 딱 맞는 모터, 지금 견적부터 시작하세요.</p>
+
+    <form id="quoteForm">
+      <div class="form-group">
+        <label for="category">제품 카테고리</label>
+        <select id="category" disabled>
+          <option value="">선택해주세요</option>
+        <option value="">제품을 선택해주세요</option>
+        <option value="효성모터" selected>효성모터</option>
+        <option value="ABB">ABB</option>
+        <option value="윌로펌프">윌로펌프</option>
+        <option value="그린포스펌프">그린포스펌프</option>
+        <option value="데스미펌프">데스미펌프</option>
+        <option value="DANFOSS">DANFOSS</option>
+        <option value="감속기">감속기</option>
+        <option value="자동제어판넬">자동제어판넬</option>
+        </select>
+      </div>
+      <div class="form-group">
+      <label for="product">제품명</label>
+      <select id="product" required>
+        <option value="">제품을 선택해주세요</option>
+        <option value="">IE3 고효율 모터</option>
+        <option value="">일반 산업용 유도 전동기</option>
+        <option value="">냉각팬모터</option>
+        <option value="">IE4 프리미엄 모터</option>
+       </select>
+      </div>
+      <div class="form-group"><label for="company">회사명</label><input id="company" type="text" required /></div>
+      <div class="form-group"><label for="name">담당자명</label><input id="name" type="text" required /></div>
+      <div class="form-group"><label for="phone">연락처</label><input id="phone" type="tel" required /></div>
+      <div class="form-group"><label for="email">이메일</label><input id="email" type="email" required /></div>
+      <div class="form-group"><label for="subject">문의제목</label><input id="subject" type="text" required /></div>
+      <div class="form-group"><label for="message">문의내용</label><textarea id="message" rows="6" required></textarea></div>
+
+      <div class="form-group checkbox">
+        <label><input type="checkbox" id="agree" required /> 개인정보 이용에 동의합니다.</label>
+        <button type="button" class="agree-link" onclick="openPrivacyPopup()">개인정보 이용동의서</button>
+      </div>
+
+      <div class="form-actions">
+        <button type="reset" class="btn cancel">작성취소</button>
+        <button type="submit" class="btn submit">문의하기</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- 개인정보 팝업 -->
+ <div id="privacyModal" class="modal-overlay">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closePrivacyPopup()">✕</button>
+    <h2>개인정보 이용 처리방침</h2>
+    <div class="modal-body" id="privacyScrollBox">
+      <p>
+        에이치비에스 주식회사(이하 "회사")는 고객의 개인정보를 소중히 여기며, 「개인정보 보호법」 및 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령을 준수합니다. 회사는 개인정보처리방침을 통해 고객이 제공한 개인정보가 어떠한 방식으로 수집, 이용, 보호되는지에 대해 다음과 같이 안내드립니다.<br /><br />
+        <strong>1. 수집하는 개인정보 항목 및 수집 방법</strong><br />
+        회사는 견적문의, 제품상담, 고객센터 이용 등을 통해 다음과 같은 개인정보를 수집할 수 있습니다. 필수 항목에는 성명, 회사명, 부서명, 직책, 연락처(전화번호 및 이메일 주소), 문의 내용이 포함되며, 선택적으로 주소, 팩스번호 등의 정보가 수집될 수 있습니다. 또한 서비스 이용 과정에서 IP 주소, 쿠키, 방문 일시 등의 접속 정보가 자동으로 생성되어 수집될 수 있습니다.<br /><br />
+        <strong>2. 개인정보 수집 및 이용 목적</strong><br />
+        회사는 수집한 개인정보를 제품 문의 및 견적 제공, 고객 응대, 계약 이행, A/S 및 기술 지원, 마케팅 안내(신제품 소식 등), 민원처리, 법적 분쟁 대응 등을 목적으로 활용합니다. 수집된 정보는 그 외의 목적으로는 이용되지 않습니다.<br /><br />
+        <strong>3.개인정보 보유 및 이용 기간</strong><br />
+        회사는 원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 다만 관계 법령에 따라 일정 기간 보존이 필요한 경우, 일정 기간 동안 보관됩니다. 예를 들어 계약 및 서비스 이력은 5년, 소비자 불만 및 분쟁처리 기록은 3년, 웹사이트 접속기록은 3개월 동안 보존될 수 있습니다.<br /><br />
+        <strong>4. 개인정보의 제3자 제공</strong><br />
+        회사는 고객의 동의 없이는 수집한 개인정보를 제3자에게 제공하지 않으며, 다음의 경우에만 예외적으로 제공될 수 있습니다.
+        </br>고객이 사전에 동의한 경우
+        </br>법령에 근거하여 수사기관 등의 요구가 있는 경우
+        </br>서비스 제공을 위해 불가피하게 제휴사와 정보를 공유해야 할 경우 (이 경우 최소한의 범위에서 제공되며, 별도의 고지를 드립니다)<br /><br />
+        <strong>5.개인정보의 안전성 확보 조치</strong><br />
+        회사는 고객의 개인정보를 보호하기 위해 기술적, 관리적, 물리적 조치를 시행하고 있습니다. 이에는 방화벽 및 보안솔루션 운영, 접근 권한 통제, 비밀번호 암호화 저장, 개인정보 취급자 교육 등이 포함됩니다.<br /><br />
+        <strong>6.개인정보 보호책임자 안내</strong><br />
+        회사는 개인정보 보호 업무를 총괄하는 책임자를 지정하여 고객의 개인정보 관련 문의 및 민원을 신속하고 성실하게 처리하고 있습니다. 개인정보 보호책임자에게 연락하실 경우, 문의사항에 대해 최대한 빠르게 답변해 드리겠습니다.<br /><br />
+      </p>
+    </div>
+    <div class="modal-agree">
+      <input type="checkbox" id="popupAgree" disabled />
+      <label for="popupAgree"><strong>개인정보 이용에 동의합니다.</strong></label>
+    </div>
+
+    <div class="modal-actions">
+      <button type="button" class="btn submit" id="confirmPopupBtn">확인</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <footer id="footer" class="font-score"></footer>
+<script>
+  fetch('./inc/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.querySelector('#footer').innerHTML = html;
+      const script =document.createElement('script');
+      script.src = './js/main.js';
+      document.body.appendChild(script);
+    });
+		</script> -->
+
+<script>
+// 연락처 입력 시 숫자만 허용
+document.getElementById('phone').addEventListener('input', function () {
+  this.value = this.value.replace(/[^0-9]/g, '');
+});
+
+</script>
+
+	
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./js/splitting.min.js"></script>
+	<script type="text/javascript" src="./js/waypoints.min.js"></script>
+	<script type="text/javascript" src="./js/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="./js/smoothScroll.js"></script>
+	<!-- <script type="text/javascript" src="/js/plugin/countUp.min.js"></script> -->
+	<script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="./js/functions.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/layer_popup.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
+  <script type="text/javascript" src="./js/03_quote_inquiry.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/js/vendor/html5shiv.js"></script>
+		<script src="/js/vendor/respond.min.js"></script>
+	<![endif]--><script type="text/javascript" src="./js/sub.js"></script>

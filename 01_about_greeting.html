@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBS</title>
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/language.css" /><!-- 해당언어에서만 사용하는 css -->
+  <link rel="stylesheet" href="./css/layout_responsive.css">
+  <link rel="stylesheet" href="./css/content_responsive.css">
+  <link rel="stylesheet" href="./css/main_responsive.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- XEicon -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	
+
+  <!-- Board Skin -->
+  <link rel="stylesheet" href="./css/cm_bbs_common.css">
+  <link rel="stylesheet" href="./css/cm_board.css">
+  <link rel="stylesheet" href="./css/cm_gallery.css"/>
+  <link rel="stylesheet" href="./css/cm_history.css">
+  <link rel="stylesheet" href="./css/cm_certification.css" />
+  <link rel="stylesheet" href="./css/cm_faq.css" />
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./css/swiper.css" />
+  <!--[if lte IE 9]>
+  	<link rel="stylesheet" href="/css/ie9.css">
+  <![endif]-->
+  <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+<script>
+		//  1번째  대메뉴 인덱스
+		dep1 = 1
+		
+	// dep1 = 01,
+	dep2 = 1;
+
+	// sub2_num 변수가 있을때 ( 3차메뉴 )
+				dep3 = "";
+	</script>
+ 
+</head>
+<body style="background-color: #fff;">
+	<header id="header" class="top-fixed-object"><!-- .top-fixed가 붙는 object에 top-fixed-object 클래스 추가  -->
+		<div class="gnb-overlay-bg"></div>
+		<div id="headerInnerWrap">
+			<!-- ****************** 헤더상단 ********************** -->
+			<div id="headerInner" class="area-wide clearfix">
+				<h1 class="logo"><a href="/index.html"><em class="blind">메인으로</em><img src="./images/logo.png" alt="비씨엔씨" /></a></h1>
+				<!-- 외국어 선택 -->
+			<!-- ****************** GNB ********************** -->
+			<!-- GNB PC  -->
+			<nav id="gnb" class="total-menu">
+				<h2 class="blind">주메뉴</h2>
+				<!-- 
+					- 전체메뉴 : class="total-menu"
+					- 각각메뉴 : class="each-menu" + <div id="gnbBg"></div> 삭제
+				-->
+				<div id="gnbBg"></div>
+				<ul class="clearfix area">
+					<li class="gnb1">
+						<a href="/01_about_greeting.html">회사소개</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/01_about_greeting.html"><span>인사말</span></a></li>
+								<li><a href="/01_about_history.html"><span>연혁</span></a></li>
+								<li><a href="/01_about_certificates.html"><span>인증서</span></a></li>
+								<li><a href="/01_about_overview.html"><span>회사개요</span></a></li>
+								<li><a href="/01_about_location.html"><span>오시는길</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb2">
+						<a href="/02_Products_1.html">제품소개</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/02_Products_1.html"><span>효성모터</span></a></li>
+								<li><a href="/02_Products_2.html"><span>ABB</span></a></li>
+								<li><a href="/02_Products_3.html"><span>윌로펌프</span></a></li>
+								<li><a href="/02_Products_4.html"><span>그런포스펌프</span></a></li>
+								<li><a href="/02_Products_5.html"><span>데스미펌프</span></a></li>
+								<li><a href="/02_Products_6.html"><span>DANFOSS</span></a></li>						
+								<li><a href="/02_Products_7.html"><span>감속기</span></a></li>						
+								<li><a href="/02_Products_8.html"><span>자동제어판넬</span></a></li>							
+              </ul>
+						</div>
+					</li>
+					<li class="gnb3">
+						<a href="/03_quote.html">견적문의</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/03_quote.html"><span>견적문의</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb4">
+						<a href="/04_support_FAQ.html">고객지원</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/04_support_FAQ.html"><span>FAQ</span></a></li>
+								<li><a href="/04_support_news.html"><span>최신소식</span></a></li>
+								<li><a href="/04_support_resources.html"><span>자료실</span></a></li>				
+              </ul>
+						</div>
+					</li>
+					<li class="gnb5">
+						<a href="/05_inquiry_contact.html">문의/납품현황</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/05_inquiry_contact.html"><span>문의현황</span></a></li>
+								<li><a href="/05_inquiry_delivery.html"><span>납품현황</span></a></li>						
+              </ul>
+						</div>
+					</li>					
+				</ul>
+			</nav>
+		</div>
+		<!-- GNB Mobile -->
+		<button class="nav-open-btn" title="네비게이션 열기">
+			<span class="line line1"></span><span class="line line2"></span><span class="line line3"></span>
+		</button>
+		<div class="gnb-overlay-bg-m"></div>
+		<nav id="gnbM" class="gnb-style-basic">
+			<!-- 
+				기본스타일 : .gnb-style-basic
+				Full 스타일 : .gnb-style-full
+			-->
+			<h2 class="blind">주메뉴</h2>		
+			<div class="header-util-menu-box">
+				<!-- 로고 -->
+				<div id="headerInner" class="area-wide clearfix">
+					<h1 class="inner-logo"><a href="/index.html"><em class="blind">메인으로</em></a></h1>
+				</div>
+				<!-- // -->
+			</div>
+			<!-- // -->
+			<div class="gnb-navigation-wrapper">
+				
+				<div class="gnb-navigation-inner">
+					<ul id="navigation" data-menu-clone="true">
+					<li class="gnb1 has-2dep">
+						<a href="/01_about_greeting.html">회사소개</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/01_about_greeting.html"><span>인사말</span></a></li>
+								<li><a href="/01_about_history.html"><span>연혁</span></a></li>
+								<li><a href="/01_about_certificates.html"><span>인증서</span></a></li>
+								<li><a href="/01_about_overview.html"><span>회사개요</span></a></li>
+								<li><a href="/01_about_location.html"><span>오시는길</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb2 has-2dep">
+						<a href="/02_Products_1.html">제품소개</a>
+						<div class="gnb-2dep">
+							<ul>
+							 	<li><a href="/02_Products_1.html"><span>효성모터</span></a></li>
+								<li><a href="/02_Products_2.html"><span>ABB</span></a></li>
+								<li><a href="/02_Products_3.html"><span>윌로펌프</span></a></li>
+								<li><a href="/02_Products_4.html"><span>그런포스펌프</span></a></li>
+								<li><a href="/02_Products_5.html"><span>데스미펌프</span></a></li>
+								<li><a href="/02_Products_6.html"><span>DANFOSS</span></a></li>						
+								<li><a href="/02_Products_7.html"><span>감속기</span></a></li>						
+								<li><a href="/02_Products_8.html"><span>자동제어판넬</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb3 has-2dep">
+						<a href="/03_quote.html">견적문의</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/03_quote.html"><span>견적문의</span></a></li>					
+              </ul>
+						</div>
+					</li>
+					<li class="gnb4 has-2dep">
+						<a href="/04_support_FAQ.html">고객지원</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/04_support_FAQ.html"><span>FAQ</span></a></li>
+								<li><a href="/04_support_news.html"><span>최신소식</span></a></li>						
+								<li><a href="/04_support_resources.html"><span>자료실</span></a></li>						
+              </ul>
+						</div>
+					</li>				
+          <li class="gnb5 has-2dep">						
+						<a href="/05-문의.html">문의/납품현황</a>
+						<div class="gnb-2dep">
+							<ul>
+								<li><a href="/05-문의.html"><span>문의현황</span></a></li>
+								<li><a href="/06_delivery_status.html"><span>납품현황</span></a></li>		
+              </ul>
+						</div>
+					</li>				
+				</ul><!-- PC메뉴 같을때 true / 같지않으면 false 후 메뉴삽입 -->
+				</div>
+				<div class="footer_bottom">
+					<div class="linkbox">
+						<ul>
+							<li><a href="#" target="_blank">사업자정보확인</a></li>
+							<li><a href="#">개인정보처리방침</a></li>
+							<li><a href="#">이메일무단수집거부</a></li>
+							<li><a href="/03_quote.html">견적문의</a></li>
+						</ul>
+					</div>
+					<div class="corp_info">
+						<span>대표이사 : 배수영</span>
+						<span>사업자등록번호 : 705-87-01099</span>
+						<span>주소 : 부산광역시 사상구 괘감로 37, 1동 119호 ~ 121호(괘법동, 산업용품유통상가)</span>
+					</div>
+					<div class="corp_info">
+						<span>대표번호 : 051-319-3111</span>
+						<span>FAX : 051-319-3113</span>
+						<span>이메일 : hbs@hbsolution.kr</span>
+					</div>
+      		<p class="copyright">&copy; <span id="this_year"></span> HBS All Rights Reserved</p>
+					<div class="social">
+						<span>Social</span>
+						<ul>
+							<li><a href="#"><img src="./images/social-1.png" alt="트위터"></a></li>
+							<li><a href="#"><img src="./images/social-2.png" alt="인스타그램"></a></li>
+							<li><a href="#"><img src="./images/social-3.png" alt="페이스북"></a></li>
+							<li><a href="#"><img src="./images/social-4.png" alt="스페이스엑스"></a></li>
+						</ul>
+					</div>
+    </div>
+			</div>
+		</nav>
+		</header>	<!-- //header -->
+   <!-- container -->
+	<div id="container">
+		<!-- visual -->
+				<section id="visual" class="sub-visual-company">
+			<div class="visual-img-con" style="background:#eee url(./images/회사소개.png) no-repeat 50% 0%"></div>
+			<div class="area visual-txt-con">
+				<div class="table-cell-layout">
+					<div class="visual-txt-container">
+						<h2 class="visual-tit cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0">회사소개</h2>
+						<!-- <p class="visual-sub-txt cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0" data-speed-delay="0.3">Best Credit & Creativity</p>
+					</div> -->
+				</div>
+				<!-- <div class="location">
+					<ul>
+						<li><a href="http://www.bcnc.co.kr/kr/index.php" title="HOME"><i class="xi-home-o"></i></a></li>
+						<li>COMPANY</li>
+						<li>CEO 인사말</li>					</ul>
+				</div> -->
+			</div>
+		</section>
+				<!-- //visual -->
+		<!-- middleArea -->
+		<div id="middleArea">
+			<!-- ****************** 서브메뉴 ********************** -->
+						<!-- 서브메뉴 2 -->
+			<aside id="topMenu02" class="">
+				<div class="side-menu-inner">
+					<div class="area">
+						<ul class="snb sub-menu-company clearfix ">
+								<li><a href="/01_about_greeting.html"><span>인사말</span></a></li>
+								<li><a href="/01_about_history.html"><span>연혁</span></a></li>
+								<li><a href="/01_about_certificates.html"><span>인증서</span></a></li>
+								<li><a href="/01_about_overview.html"><span>회사개요</span></a></li>
+								<li><a href="/01_about_location.html"><span>오시는길</span></a></li>							
+              </ul>
+					</div>
+				</div>
+			</aside>
+			<!-- // -->
+
+			<!-- 모바일 서브메뉴 1 -->
+			<aside id="topMenuM01" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="/index.html" class="location-to-home-btn" title="메인으로"><i class="xi-home-o"></i></a>
+					<!-- 1차메뉴 -->
+					<div class="menu-location location1 cm-drop-menu-box-JS font-noto" data-drop-event="click">
+						<button class="cur-location cm-drop-open-btn-JS">
+							<span>회사소개</span>
+							<i class="xi-angle-down-min arrow"></i>
+						</button>
+						<ul class="location-menu-con cm-drop-list-JS">
+							<li><a href="/01_about_greeting.html">회사소개</a></li>
+							<li><a href="/02_products_1.html">제품소개</a></li>
+							<li><a href="/03_quote.html">견적문의</a></li>
+							<li><a href="/04_support_FAQ.html">고객지원</a></li>
+							<li><a href="/05_inquiry_contact.html">문의/납품현황</a></li>
+						</ul>
+					</div>
+					<!-- 2차메뉴 -->
+					<div class="menu-location  location2 cm-drop-menu-box-JS font-noto" data-drop-event="click">
+						<button class="cur-location cm-drop-open-btn-JS">
+							<span>인사말</span>
+							<i class="xi-angle-down-min arrow"></i>
+						</button>
+						<ul class="location-menu-con cm-drop-list-JS">
+							<li><a href="/01_about_greeting.html"><span>인사말</span></a></li>
+							<li><a href="/01_about_history.html"><span>연혁</span></a></li>
+							<li><a href="/01_about_certificates.html"><span>인증서</span></a></li>
+							<li><a href="/01_about_overview.html"><span>회사개요</span></a></li>
+							<li><a href="/01_about_location.html"><span>오시는길</span></a></li>			
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<!-- // -->
+						
+			<!-- content -->
+			<section id="content" class="wide">
+				<!-- ****************** 상단정보 ********************** -->
+				<!-- 상단정보 (기본/센터정렬) -->
+				<aside id="contentInfoCon_company" class="area" data-scroll="fade-up">
+				<style type="text/css">
+				.recruit_txt{display:none;}
+				</style>
+					<h3 class="content-tit">인사말</h3>	
+					<div class="recruit_txt">비씨엔씨와 함께 할 <span>소중한 인재</span>를 기다립니다.</div>
+
+				</aside>				
+	<article class="sub-page company-page" data-scroll="fade-up">
+		<div class="area-wide">
+			<div class="greeting-con-wrap-re">
+				<div class="inner-area">
+					<div class="greeting-txt-box">
+						<div class="greeeting-top-box">
+							<h4 class="top-tit">
+								산업 관련 토탈 시스템을 갖추어 <br/><span>기업가 정신을 바탕</span>으로 고객 만족을 실천하는 기업, <br>에이치비에스
+							</h4>
+						</div>
+						<div class="greeting-bottom-box">
+							<p class="bottom-txt">안녕하십니까. <br>
+								<span>에이치비에스</span> 주식회사를 찾아주셔서 감사합니다.<br>
+                
+              </p>
+							<p class="bottom-txt">
+								저희 <span>HBS</span>는 <span>1988년 창립 이래, 모터, 감속기, 팬, 인버터 및 자동제어 시스템까지 아우르는 
+                산업용 토탈 솔루션</span>을 제공하며 고객의 신뢰와 기대에 부응해 왔습니다.<br>
+								축적된 기술력과 노하우, 그리고 독자적인 물류 시스템을 바탕으로
+                다양한 제품 확보, 빠른 납기, 경쟁력 있는 가격을 통해 고객 만족을 실현하고 있습니다.<br>
+								<span>HBS</span>는 <span>“Customer Commitment, Technical Innovation, Lifecycle Service”</span>라는 슬로건 아래,
+                고객 중심, 기술 혁신, 전 생애주기 서비스를 통해 지속 가능한 가치를 창출합니다.<br>
+								또한, <span>ALL FOR ONE, ONE FOR ALL</span>이라는 철학으로 임직원 모두가 하나 되어
+                고객과의 상생을 실현하며, 늘 고객 곁에서 함께 성장하는 파트너가 되겠습니다.<br>
+								앞으로도 <span>HBS</span>는 <span>정직하고 투명한 기업 운영, 사회적 책임 실천,
+                그리고 다양한 이해관계자와의 공감과 신뢰를 바탕으로,</span>
+                기업의 본질적인 역할을 충실히 수행하는 <span>‘정도(正道)경영’</span>을 이어가겠습니다.<br>
+								고객 여러분의 아낌없는 성원에 감사드리며,
+                하루하루 새롭게 성장하는 <span>HBS</span>의 <span>미래를 함께 지켜봐 주시기 바랍니다.</span><br>
+                감사합니다.
+							</p>
+						
+								<div class="ceo-nm">
+						에이치비에스 대표이사<br> <span>배수영</span>
+					</div>
+							<!-- <p class="ceo-txt">대표이사 김 돈 한</p> -->
+						</div>
+					</div>
+					
+				</div>
+			
+				<div class="greeting-img-box">
+					<span><img src="./images/background.png" alt="ceo 이미지"></span>
+				</div>
+			</div>
+		</div>
+	</article>
+					
+			</section>
+			<!-- //content -->
+		</div>
+		<!-- //middleArea -->
+	</div>
+	<!-- //container -->
+
+<!-- footer -->
+    <div id="footer"></div>
+    <script>
+      fetch("/inc/footer.html")
+  .then((res) => res.text())
+  .then((html) => {
+    document.querySelector("#footer").innerHTML = html;
+    if (typeof initFooterFamily === "function") initFooterFamily();
+  });
+    </script>
+    <!-- //footer -->
+
+  <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./js/splitting.min.js"></script>
+	<script type="text/javascript" src="./js/waypoints.min.js"></script>
+	<script type="text/javascript" src="./js/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="./js/smoothScroll.js"></script>
+	<script type="text/javascript" src="/js/plugin/countUp.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="./js/functions.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/layer_popup.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/js/vendor/html5shiv.js"></script>
+		<script src="/js/vendor/respond.min.js"></script>
+	<![endif]--><script type="text/javascript" src="./js/sub.js"></script>
+ 
+</body>
+</html>
