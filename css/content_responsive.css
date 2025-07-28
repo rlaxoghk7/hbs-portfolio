@@ -27,7 +27,7 @@
 	/* Tab Fixed Move*/
 	/* .sub-tab-list-style.top-fixed{top:80px;} */
 }
-@media all and ( max-width: 800px ){
+/* @media all and ( max-width: 800px ){ */
 	/* Tab 공통 스타일 */
 	/* .sub-tab-list-style ul li{width:100%; max-width:none;}
 	.sub-tab-wrapper-style,
@@ -451,18 +451,16 @@
 	.line-up-top-con .line-con-txt{width:70%;}
 	.line-up-top-con .line-con-img{right:7%}
 }
-@media all and (max-width:1220px){
+@media all and (max-width:1200px){
 	.line-up-top-con .line-con-txt{width:70%;}
 	.line-up-top-con .line-con-img{right:5%;}
+	.line-up-list-con .txt-box {padding-left: 8%;}
 	.line-up-list-con .txt-box .tit {font-size: 28px; margin-bottom: 30px;}
-	.line-up-list-con .txt-box .txt {font-size: 14px; line-height: 1.5rem; width: 70%}
-	
+	.line-up-list-con .txt-box .txt {font-size: 16px; line-height: 1.8rem;}
 
 	.line-up-list-con .brand_box a {width: 30% ;}
 	.line-up-list-con .brand_box a img {width: 100%;}
 	.line-up-list-con .q-button {position: absolute; bottom: 20%; right: 10%; }
-	.line-up-list-con .qlink-button { padding: 5px 10px;}
-	.line-up-list-con .qlink-button a {font-size: 12px;}
 
 
 	/* 라인업 페이지 수정 css */
@@ -488,7 +486,8 @@
 
 @media all and (max-width:900px) {
 	.line-up-list-con .txt-box .tit {font-size: 20px; margin-bottom: 30px;}
-	.line-up-list-con .txt-box .txt {font-size: 12px; line-height: 1.5rem;}
+	.line-up-list-con .qlink-button {padding: 8px 12px;}
+	.line-up-list-con .qlink-button a {font-size: 16px;}
 }
  
 @media all and (max-width:800px){
@@ -530,35 +529,42 @@
 
 /*********** 라인업 :: 리스트 **********/
 @media all and (max-width:800px){
+	.line-up-list-con .brand_box {flex-direction: column;}
+	.line-up-list-con .brand_box a { width: 60%;}
+	.line-up-list-con .txt-box {padding-left: 0; width: 100%;}
+	.line-up-list-con .txt-box .txt {width: 100%;}
 	.line-up-list-con .txt-box .tit{margin-bottom: 15px;}
-	.line-up-list-con .txt-box .txt {line-height: 1.3rem;}
 	.line-up-list-con .txt-box .sub-info dt{font-size:15px;}
 	.line-up-list-con .txt-box .sub-info dd{font-size:14px;}
-	.line-up-list-con .txt-box .txt{font-size:13px;}
 
-	.line-up-list-con{display: block; padding:30px 60px;}
+	.line-up-list-con{display: block; }
 	.line-up-list-con .img-box{display: block; width:100%; margin-bottom:30px;}
 	/* .line-up-list-con .img-box span{padding-top:45%;} */
-	.line-up-list-con .txt-box{display: block; width:100%; padding-left:50px;}
 	.line-up-list-con .txt-box .sub-info{margin:5px 0;}
 	.line-up-list-con .txt-box .sub-info dt:before{top:8px; right:-12px;}
 	.line-up-list-con .txt-box .sub-info dd{padding-left:20px;}
+	.line-up-list-con .q-button {right: 8%;}
 }
 @media all and (max-width:700px) {
-	.line-up-list-con .qlink-button {padding: 5px 10px}
-	.line-up-list-con .q-button {right: 5%}
-	.line-up-list-con .txt-box {padding-left: 20px; padding-left: 40px;}
+	.line-up-list-con .q-button {bottom: 22%;}
+	.line-up-list-con .qlink-button {padding: 7px 10px}
+	.line-up-list-con .txt-box .txt {font-size: 14px;}
 }
-@media all and (max-width:400px) {
-	.line-up-list-con .txt-box .txt {font-size: 10px;}
-	.line-up-list-con .q-button {bottom: 15%;}
-	.line-up-list-con .qlink-button {padding: 3px 8px;}
-	.line-up-list-con .qlink-button a {font-size: 10px;}
+@media all and (max-width:600px) {
+  .line-up-list-con .q-button {bottom: 25%;} 
+}
+@media all and (max-width:500px) {
+	.line-up-list-con:first-child {padding-top: 20px;}
+	.line-up-list-con {padding: 20px 20px 20px;}
+	.line-up-list-con .q-button {bottom: 28%;}
+	.line-up-list-con .qlink-button a {font-size: 14px;}
+}
+@media all and (max-width:422px) {
+	.line-up-list-con .txt-box .txt {font-size: 12px;}
+	.line-up-list-con .q-button {bottom: 31%;}
+	.line-up-list-con .qlink-button a {font-size: 12px;}
 }
 
-@media all and (max-width:500px) {
-	.line-up-list-con {padding: 30px 20px;}
-}
 /*********** Competencies :: R&D현황 **********/
 @media all and (max-width:1420px){
 	.rnd-page .cm-hr-tit-box .hr-bg{font-size:170px;}

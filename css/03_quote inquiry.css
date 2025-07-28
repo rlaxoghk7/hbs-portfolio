@@ -64,7 +64,7 @@ select#category {appearance: none; background-color: #eee; color: #aaa; font-wei
 
 .form-group label, .form-group-text label {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   cursor: auto;
   padding: 0px 0px 15px 20px;
 }
@@ -79,8 +79,8 @@ input, select {font-weight: 300;}
 .form-group-text textarea {
   padding: 12px 18px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+  /* border-radius: 4px; */
+  font-size: 18px;
   box-sizing: border-box;
   color: #ccc;
   outline: none;

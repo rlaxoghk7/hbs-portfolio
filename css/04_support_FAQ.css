@@ -37,7 +37,7 @@ body {
 
 .faq-count {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 25px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 25px 20px;
@@ -63,11 +63,11 @@ body {
 }
 .faq-question {
  position: relative;
- padding: 25px 10px;
+ padding: 20px 10px 10px;
   background: none;
   width: 100%;  
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   justify-content: space-between;
   align-items: center;
@@ -83,15 +83,16 @@ body {
   color: #e65100;
   float: right;
   font-size: 30px;
-  line-height: .5;
   padding-right: 10px;
+  position: relative;
+  bottom: 5px;
 }
 
 .faq-answer {
   display: flex;
   padding: 20px 40px 30px;
-  font-size: 17px;
-  color: #333;
+  font-size: 18px;
+  color: #666;
 }
 .faq-answer .qa-label {
   flex-shrink: 0;

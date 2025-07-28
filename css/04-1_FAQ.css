@@ -1,0 +1,99 @@
+body {
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.faq-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding: 100px 5%;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.inquiry-button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background: #f26522;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-box {
+  border-top: 2px solid #000000;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.q-icon {
+  font-weight: bold;
+  color: #f26522;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.q-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.answer {
+  color: #555;
+  line-height: 1.7;
+  font-size: 15px;
+  padding-left: 30px;
+}
+
+.faq-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.faq-nav .label {
+  color: #f26522;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.faq-nav .title {
+  color: #333;
+}
+
+.list-button {
+  margin: 0 auto;
+  background: #f26522;
+  color: #fff;
+  border: none;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  left: 350px;
+  top: 30px;
+}

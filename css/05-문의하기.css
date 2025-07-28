@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+
+.faq-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 5%;
+  box-sizing: border-box;
+}
+
+.faq-title {
+  text-align: center;
+  margin: 0 auto 100px;
+}
+.faq-title h1 {margin-bottom: 100px; font-size: 60px;}
+.faq-title p {font-size: 30px; line-height: 38px;color: #333; font-weight: 600;}
+.faq-title p span {color: #E65100;}
+
+#quoteForm label {position: relative;}
+#quoteForm label::after {content:''; position: relative; width: 5px; height: 5px; display: block; border-radius: 100%; background-color: #356690; top: -12px;left: -14px;}
+
+.form-group, .form-group-text {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-group-text .word_count {position: absolute; bottom: 20px; right: 30px; font-size: 16px; color: #ccc; pointer-events: none;}
+
+.form-group label, .form-group-text label {
+  font-weight: 700;
+  font-size: 22px;
+  cursor: auto;
+  padding: 0px 0px 15px 20px;
+}
+
+input {font-weight: 300;}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group-text input,
+.form-group-text select,
+.form-group-text textarea {
+  padding: 12px 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #ccc;
+  outline: none;
+}
+
+.form-group textarea,
+.form-group-text textarea, 
+::placeholder {
+  resize: none;
+  color: #ccc;
+}
+
+/*  */
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.description .highlight {
+  color: #e95414;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-top: 50px;
+  text-align: left;
+}
+
+
+textarea {
+  width: 100%;
+  height: 160px;
+  font-size: 14px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.button-group {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+#cancel {
+  font-size: 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  color: #e65100;
+}
+
+#submit {
+  background-color: #e65100;
+   font-size: 20px;
+  padding: 15px 30px;
+  color: #f6f6f6;
+  border: none;
+}
+
+@media (max-width: 1100px) {
+  .faq-title p {font-size: 22px; line-height: 32px;}
+  .form-group label, .form-group-text label {font-size: 20px; padding-bottom: 10px;}
+  .form-group input, .form-group select, .form-group textarea, .form-group-text input, .form-group-text select, .form-group-text textarea {padding: 10px 14px; font-size: 15px;}
+  
+  #cancel, #submit {padding: 10px 20px; font-size: 18px;}
+}
+@media (max-width: 900px) {
+  .form-group label, .form-group-text label {font-size: 18px; padding-bottom: 8px;}
+  .form-group input, .form-group select, .form-group textarea, .form-group-text input, .form-group-text select, .form-group-text textarea {padding: 8px 12px; font-size: 14px;} 
+  .form-group-text .word_count {font-size: 12px;}
+}
+@media (max-width: 800px) {
+  .faq-container {padding: 50px 5%;}
+  .faq-title h1 {font-size: 48px; padding: 30px 5%; margin-bottom: 40px;}
+  .mail-wrap p {left: 49.5%;}
+  .form-group-text .word_count {bottom: 14px; right: 20px;}
+}
+@media (max-width: 600px) {
+  .faq-title h1 {font-size: 40px;}
+  .faq-title {margin-bottom: 80px;}
+  .faq-title p {font-size: 18px; line-height: 28px;}
+  .form-group input, .form-group select, .form-group textarea, .form-group-text input, .form-group-text select, .form-group-text textarea {font-size: 13px; padding: 6px 10px;}
+  .form-group-text textarea {padding: 10px;}
+  #cancel, #submit {font-size: 16px;}
+  .form-group-text .word_count {font-size: 10px;}
+}
+@media (max-width: 500px) {
+  .faq-title h1 {font-size: 34px; margin-bottom: 20px;}
+  .quote-form-title p {font-size: 15px; line-height: 24px;}
+  .form-group label, .form-group-text label {font-size: 16px; padding-bottom: 4px;}
+  .group-wrap {flex-direction: column;}
+  #cancel, #submit {font-size: 14px; padding: 8px 16px;}
+}
+@media (max-width: 400px) {
+  .faq-container {padding: 20px 5% 50px;}
+  .faq-title {margin-bottom: 50px;}
+  .faq-title h1 {font-size: 30px;}
+  .faq-title p {font-size: 13px; line-height: 20px;}
+  #cancel, #submit {font-size: 12px; padding: 8px 14px;}
+}

@@ -1,0 +1,128 @@
+.inquiry-section {
+  padding: 60px 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #1a1a1a;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.75;
+}
+
+.inquiry-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.inquiry-content {margin-top: 200px;}
+
+.inquiry-box {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 100px 30px;
+  position: relative;
+}
+.inquiry-box figure {
+  position: absolute;
+  top: 30%;
+  right: -10%;
+}
+.inquiry-box figure img {}
+
+.inquiry-subtitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.inquiry-content p {
+  font-size: 18px;
+  line-height: 2rem;  
+  word-spacing: 1.2px;
+}
+.inquiry-content p ul {font-size: 18px;}
+
+.info-block {
+  margin-top: 50px;
+ 
+  line-height: 1.5rem;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #e65100;
+}
+
+
+
+.contact {
+  margin-top: 80px;
+}
+
+a {
+  color: #e65100;
+  text-decoration: none;
+}
+
+.btn-wrap {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-outline {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #e65100;
+  color: #f6f6f6;
+  margin: 0 auto;
+}
+
+.btn-orange {
+  background-color: #e65100;
+  color: white;
+  padding: 12px 14px;
+  font-size: 16px;
+  position: absolute;
+  right:2%;
+  top: 13%;
+}
+
+
+
+@media (max-width: 1550px) {
+  .inquiry-box figure {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+.inquiry-box figure img {width: 800px;}
+}
+@media (max-width: 900px) {
+  .btn-orange {top: 13%; padding: 10px 10px;}
+  .info-title {font-size: 18px;}
+  .inquiry-content p {font-size: 16px; line-height: 1.5rem;}
+  .btn-outline {font-size: 16px; padding: 8px 15px;}
+}
+@media (max-width: 800px) {
+  .inquiry-box {background: url(../images/motorbackground.png) center/contain no-repeat;}
+  .inquiry-box figure img{display: none;}
+}
+
+@media (max-width: 700px) {
+  .inquiry-box {padding: 50px 10px;}
+  .inquiry-title {font-size: 24px;}
+  .inquiry-content p {font-size: 14px; padding-left: 20px;}
+}
+@media (max-width: 600px) {
+  .inquiry-content {margin-top: 100px;}
+  .btn-orange {top: 9%; padding: 10px 8px; font-size: 12px;}
+  .btn-wrap {margin-top: 50px;}
+  .btn-outline {font-size: 12px;}
+}
+@media (max-width: 500px) {
+  .info-title {padding-left: 20px; margin-bottom: 10px;}
+}
+@media (max-width: 420px) {
+  .inquiry-content p {font-size: 12px;}
+  .info-title {font-size: 16px; margin-bottom: 4px;}
+}

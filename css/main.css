@@ -181,14 +181,14 @@
 .main-scroll-icon{position:absolute; bottom:6.1%; right: -30px; opacity:0; text-align:center; z-index:9; animation: upDown 1.5s ease-in-out infinite; transition:right ease-out 0.9s 0.7s, opacity ease-out 0.5s 0.7s; width:10px}
 .field-sub-sec .scroll-con{position:absolute; bottom:10%; right:0; z-index:9}
 .main-scroll-icon .txt{display:block; width:0.8rem; height:8.7rem; background:url("../images/main/scroll_txt.png") no-repeat; background-size:contain; margin:0 auto 2rem}
-.main-scroll-icon .icon{position:relative; display:block; width:7px; height:20px; background-color: #fff; background-size:contain; overflow:hidden; -webkit-border-radius: 20px; border-radius: 20px;}
-.main-scroll-icon .icon:after{position:absolute; content:""; width:3px; height:3px; background-color:#272a22; border-radius:50%; top:-20%; left:2px;  animation: scrollUpdown 1.1s ease-in-out infinite;}
+.main-scroll-icon .icon{position:relative; display:block; width:7px; height:160px; background-color: #fff; background-size:contain; overflow:hidden; -webkit-border-radius: 20px; border-radius: 20px;}
+.main-scroll-icon .icon:after{position:absolute; content:""; width:5px; height:5px; background-color:#111; border-radius:50%; top:-10%; left:1px;  animation: scrollUpdown 1.1s ease-in-out infinite;}
 @keyframes scrollUpdown {
 	0% {
 		top:-20%; opacity:1
 	}
 	100% {
-		top:80%; opacity:0.2
+		top:90%; opacity:0.2
 	}
 }
 
@@ -309,12 +309,12 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 .main-quick-wrapper{padding: 0 100px; display: grid; grid-template-columns: repeat(3,auto); grid-auto-rows: max-content; gap:30px; margin-top: 200px;}
 .main-quick-list{display: contents; padding: 0; margin: 0; list-style: none}
 
-.main-quick-item {position: relative; box-shadow: 0 10px 20px rgba(51, 51, 51, .1); border-radius: 30px; width: 100%; overflow: hidden;transition: all 0.3s ease;}
-.main-quick-item:hover {box-shadow: 0 10px 20px rgba(230, 81, 0, .3); transform: translateY(-10px); border: none}
-.main-quick-item:nth-child(1) {grid-area: 1 / 1 / 2 / 2; width: 200px; height: 264px; background: url(../images/Product1.png) center/cover no-repeat;}
-.main-quick-item:nth-child(2) {grid-area: 1 / 2 / 2 / 4; width: 371px; height: 264px; background: url(../images/Product2.png) center/cover no-repeat;}
-.main-quick-item:nth-child(3) {grid-area: 2 / 1 / 3 / 3; width: 371px; height: 264px; background: url(../images/Product3.png) center/cover no-repeat;}
-.main-quick-item:nth-child(4) {grid-area: 2 / 3 / 3 / 3; width: 200px; height: 264px; background: url(../images/Product4.png) center/cover no-repeat;}
+.main-quick-item {position: relative; border: 1px solid #eee; transform: translate(.3s ) ease-in-out; border-radius: 30px; width: 100%; overflow: hidden;transition: all 0.3s ease;}
+.main-quick-item:hover {box-shadow: 5px 5px 10px rgba(51, 51, 51, .1); transform: translateY(-5px) .7s ease-in-out; border: none;}
+.main-quick-item:nth-child(1) {grid-area: 1 / 1 / 2 / 2; width: 200px; height: 264px; background: url(../images/product-main1.png) center/cover no-repeat;}
+.main-quick-item:nth-child(2) {grid-area: 1 / 2 / 2 / 4; width: 371px; height: 264px; background: url(../images/product-main2.png) center/cover no-repeat;}
+.main-quick-item:nth-child(3) {grid-area: 2 / 1 / 3 / 3; width: 371px; height: 264px; background: url(../images/product-main3.png) center/cover no-repeat;}
+.main-quick-item:nth-child(4) {grid-area: 2 / 3 / 3 / 3; width: 200px; height: 264px; background: url(../images/product-main4.png) center/cover no-repeat;}
 
 .main-quick-item a{display: block; position: relative; width: 100%; height: 100%; -webkit-box-shadow: 55px 55px 150px -75px rgba(0,0,0,0.26); box-shadow: 55px 55px 150px -75px rgba(0,0,0,0.26); overflow: hidden;}
 
@@ -348,7 +348,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 
 .main-customer-title{position: absolute; bottom: 130px; bottom: 12.6%; left: 0; width: 100%;}
 #mainCustomerCon .main-tit-box {padding-bottom: 180px;}
-#mainCustomerCon .main-tit-box .main-tit{font-size: 36px; margin-top: 15px;}
+#mainCustomerCon .main-tit-box .main-tit{font-size: 30px; margin-top: 15px;}
 .main-control-box{padding-left: 380px;}
 .main-control-box button{display: inline-block; vertical-align: middle; width: 60px; height: 60px; background-color: #fff; -webkit-border-radius: 100%; border-radius: 100%;}
 .main-control-box button + button{margin-left: 10px; }
@@ -373,7 +373,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 														text-overflow: ellipsis;
 														word-break: break-word;
 														white-space: normal;
-														font-size:22px;
+														font-size:20px;
 														line-height:1.5;
 														width: 100%;
 														max-width: 375px;
@@ -447,7 +447,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
   background-color: #444;
   color: #E16E3F;
   border: 1px solid #E16E3F;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 	appearance: none;
 	position: relative;
 }
@@ -483,13 +483,13 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
   font-weight: bold;
   text-align: center;
   border: 1px solid #E16E3F;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   background-color: #444;
 }
 
 /* 오른쪽 안내 영역 */
 .quote-side {
-    max-width: 360px;
+    width: 30%;
     border-radius: 16px;
     text-align: center;
     box-sizing: border-box;
@@ -497,8 +497,8 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 }
 
 .quote-side-text {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 2.5rem;
   margin-bottom: 20px;
 
 }
@@ -510,7 +510,6 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
   padding: 12px 20px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 8px;
   cursor: pointer;
   transition:  0.3s;
 }

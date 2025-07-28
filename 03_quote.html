@@ -112,10 +112,10 @@
 						</div>
 					</li>
 					<li class="gnb5">
-						<a href="/05_inquiry_contact.html">문의/납품현황</a>
+						<a href="/05_inquiry_contact-1.html">문의/납품현황</a>
 						<div class="gnb-2dep">
 							<ul>
-								<li><a href="/05_inquiry_contact.html"><span>문의현황</span></a></li>
+								<li><a href="/05_inquiry_contact-1.html"><span>문의현황</span></a></li>
 								<li><a href="/05_inquiry_delivery.html"><span>납품현황</span></a></li>						
               </ul>
 						</div>
@@ -192,10 +192,10 @@
 						</div>
 					</li>				
           <li class="gnb5 has-2dep">						
-						<a href="/05_inquiry_contact.html">문의/납품현황</a>
+						<a href="/05_inquiry_contact-1.html">문의/납품현황</a>
 						<div class="gnb-2dep">
 							<ul>
-								<li><a href="./05_inquiry_contact.html"><span>문의현황</span></a></li>
+								<li><a href="./05_inquiry_contact-1.html"><span>문의현황</span></a></li>
 								<li><a href="./05_inquiry_delivery.html"><span>납품현황</span></a></li>		
               </ul>
 						</div>
@@ -276,7 +276,7 @@
 							<li><a href="/02_Products_1.html">제품소개</a></li>
 							<li><a href="/03_quote.html">견적문의</a></li>
 							<li><a href="/04_support_FAQ.html">고객지원</a></li>
-							<li><a href="/05_inquiry_contact.html">문의/납품현황</a></li>
+							<li><a href="/05_inquiry_contact-1.html">문의/납품현황</a></li>
 						</ul>
 					</div>
 					<!-- 2차메뉴 -->
@@ -327,7 +327,7 @@
       <div class="form-group company"><label for="company">회사명</label><input id="company" placeholder="업체명을 입력해 주세요." type="text" type="text" required /></div>
       <div class="group-wrap">
         <div class="form-group name"><label for="name">담당자명</label><input id="name" placeholder="이름을 입력해 주세요." type="text" type="text" required /></div>
-        <div class="form-group phone"><label for="phone">연락처</label><input id="phone" placeholder="'-'을 빼고 입력해주세요." type="tel" required maxlength="11"/></div>
+        <div class="form-group phone"><label for="phone">연락처</label><input id="phone" placeholder="'-'을 빼고 입력해주세요." type="number" required maxlength="11"/></div>
       </div>
       <div class="mail-wrap">
         <div class="form-group email"><label for="email">e-mail</label><input id="email" placeholder="이메일을 입력해 주세요" type="email" required /></div>
@@ -411,6 +411,12 @@
   document.addEventListener("DOMContentLoaded", () => {
   const inquireInput = document.querySelector("#message");
   const counterEl = document.querySelector(".word_count .current");
+	document.getElementById('phone').addEventListener('input', function () {
+    const maxLength = 11;
+    if (this.value.length > maxLength) {
+      this.value = this.value.slice(0, maxLength);
+    }
+  });
 
   if (inquireInput) {
     inquireInput.addEventListener("input", ({ target }) => {
@@ -472,8 +478,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-	
-<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/03_quote_inquiry.js"></script>
+  <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="./js/slick.js"></script>
 	<script type="text/javascript" src="./js/swiper.min.js"></script>
 	<script type="text/javascript" src="./js/TweenMax.min.js"></script>

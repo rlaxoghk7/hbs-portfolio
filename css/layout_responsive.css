@@ -16,17 +16,20 @@
 @media all and ( max-width: 1440px ){
 	#header .logo{margin-left: -20px;}
 	#gnb.total-menu > ul > li .gnb-2dep ul li a {font-size: 13px; font-weight: 300;}
-	#gnb > ul > li > a {font-size: 16px;}
 	#gnb > ul > li.gnb1{width: 120px;}
 	#gnb > ul > li.gnb2{width: 120px;}
 	#gnb > ul > li.gnb3{width: 120px;}
 	#gnb > ul > li.gnb4{width: 120px;}
 	#gnb > ul > li.gnb5{width: 120px;}
 }
+@media all and ( max-width: 1300px ) {
+	#header .logo {top: -5px; left: 30px; background: url(../images/logo-second.png) center / cover no-repeat;width: 75px;}
+	#header .logo img {display: none; }
+}
 
 @media all and ( max-width: 1200px ){	/* 1024까지 레이아웃유지가 안될시 max-width: 컨텐츠너비+20px */
 	.fullpage-html #header{position:relative;}
-	#headerInnerWrap{position:fixed; z-index:99;}
+	#headerInnerWrap{ z-index:99;}
 	/* padding값 적절히 바꿔주세요 */
 	
 	#gnb > ul > li.gnb1{width: 110px;}
@@ -93,8 +96,8 @@
 	.gnb-navigation-wrapper{position:relative; height:100%; width: 100%; box-sizing:border-box; padding-top:120px; overflow: auto;}	/* padding-top : Header 높이값 */
 	.header-util-menu-box + .gnb-navigation-wrapper{padding-top:0; height:calc(100% - 100px); }
 	#headerInner{height: 0}
-	.header-util-menu-box .inner-logo{position:relative; z-index:9999; float:left; top: 0px; left: -60px;}
-	.header-util-menu-box .inner-logo a {display:block; background: url("../images/logo\(orange\).svg") center/cover no-repeat; width: 120px; height: 40px;}
+	.header-util-menu-box .inner-logo{position:relative; z-index:9999; float:left; top: 0px; left: -15px;}
+	.header-util-menu-box .inner-logo a {display:block; background: url("../images/logo.png") center/cover no-repeat; width: 150px; height: 40px;}
 	.header-util-menu-box .inner-logo img{ vertical-align: center;}
 	.gnb-navigation-inner {margin: 30px 0 50px;}
 	/* GNB Mobile :: 메뉴영역 :: 1차 */
@@ -105,7 +108,6 @@
 	/* GNB Mobile ::  메뉴영역 :: 2차 */
 	#navigation > li .gnb-2dep{display:none; padding:15px 0; background-color:#333; }
 	#navigation > li .gnb-2dep > ul > li{height:auto !important;}
-	#navigation > li.gnb1 .gnb-2dep > ul > li:last-child {display: none;}
 	#navigation > li .gnb-2dep > ul > li > a{display:block; color:#e5e5e5; font-size:16px; padding:15px 55px; text-align: right;}
 	#navigation > li .gnb-2dep > ul > li.on > a{color:#e65100; font-weight:700;}
 	#navigation > li .gnb-2dep > ul > li > a:hover {color: #e65100;}
@@ -188,7 +190,7 @@
 
 @media all and ( max-width: 800px ) {
 	    #header .logo {top: -7px;}
-			.header-util-menu-box .inner-logo{top: -8px; left: 0px;}
+			.header-util-menu-box .inner-logo{top: 0px; left: -15px;}
 }
 @media all and ( max-width: 700px ){
 	#gnbM{ 
@@ -231,10 +233,7 @@
 	}
 }
 @media(max-width:800px) {
-	.foot-logo img {
-		width: 91px;
-		height: 32px;
-	}
+	
 	#footerTop {
     padding: 0px 0px 0px;
 	}
@@ -451,8 +450,16 @@
 	#content:not(.wide){padding:50px 5%;}
 	#content.wide{padding:50px 0;}
 }
-@media all and (max-width:480px){
+
+@media all and (max-width:600px) {
+	#contentInfoCon .content-tit {font-size: 40px;}
+}
+@media all and (max-width:500px){
 	#visual .visual-tit {font-size: 45px;}
+	#contentInfoCon .content-tit {font-size: 36px;}
+}
+@media all and (max-width:400px) {
+	#contentInfoCon .content-tit {font-size: 30px;}
 }
 
 /* ****************** MODAL LAYERPOPUP ********************** */

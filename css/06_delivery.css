@@ -1,0 +1,86 @@
+body {
+  
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 100px 5%;
+  margin: 0 auto 100px;
+}
+
+.container h1 {
+  font-size: 60px;
+  font-weight: 700;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.container p {
+  font-size: 30px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.container p span {color: #e65100;}
+.search-area {max-width: 1920px;}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 80%;
+  border: 1px solid #ccc;
+  outline: none;
+  border-right: none;
+}
+
+.search {
+  padding: 10px 16px;
+  background-color: #f6f6f6;
+  border: 1px solid #f26522;
+  color: #f26522;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cur-location > button:hover {
+  background-color: #f26522;
+  color: #f6f6f6;
+}
+
+
+@media (max-width: 800px) {
+  .container {padding: 70px 5%;}
+  .container h1 {font-size: 48px; padding: 70px 0;}
+  .container p {font-size: 22px;}
+  input[type="text"] {font-size: 18px;}
+  .search {font-size: 18px;}
+}
+@media (max-width: 600px) {
+  .container h1 {font-size: 40px;}
+  .container p {font-size: 18px; margin-bottom: 70px;}
+  input[type="text"] {font-size: 16px; padding: 6px 12px;}
+  .search {font-size: 16px; padding: 6px 12px;}
+}
+@media (max-width: 500px) {
+  .container {padding: 40px 5%;}
+  .container h1 {font-size: 36px; padding: 60px 0;}
+  .container p {font-size: 15px;}
+  input[type="text"] {font-size: 14px;}
+  .search {font-size: 14px;}
+}
+@media (max-width: 400px) {
+  .container {padding: 20px 5%;}
+  .container h1 {font-size: 30px;}
+  .container p {font-size: 13px;}
+  input[type="text"] {font-size: 12px; padding: 4px 8px;}
+  .search {font-size: 12px; padding: 4px 8px;}
+}

@@ -41,7 +41,7 @@ body {
 .form-group-text textarea {
   padding: 12px 18px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   font-size: 16px;
   box-sizing: border-box;
   color: #666;
