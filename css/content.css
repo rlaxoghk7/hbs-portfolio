@@ -85,7 +85,7 @@
 .greeeting-top-box .sub-tit { display: block; font-size:26px; line-height:1.53em; letter-spacing:-1.6px; color:#000; font-weight:600; } 
 
 .greeting-bottom-box { width:90%;  text-align: left; } 
-.greeting-bottom-box .bottom-txt { font-size: 20px;line-height: 28px;letter-spacing: 0px;color: #333;font-weight: 500;margin-bottom: 33px; line-height: 40px; } 
+.greeting-bottom-box .bottom-txt { font-size: 20px;line-height: 28px;letter-spacing: 0px;color: #666;font-weight: 500;margin-bottom: 33px; line-height: 40px; } 
 .greeting-bottom-box .bottom-txt:first-child {
 	border-top: 1px solid #a6a6a6;
 	padding-top: 30px;
