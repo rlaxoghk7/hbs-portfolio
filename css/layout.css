@@ -58,7 +58,7 @@ table, th, td{word-break:break-word;}
 #wrap {overflow:hidden; width:100%; min-width:320px; position:relative; }
 .area{ max-width:1400px; margin:0px auto;} /* width 홈페이지 컨텐츠 가로값에 맞게 변경 */
 .area-box{ max-width: 1400px; margin:0px auto; }
-.area-wide{ padding: 30px 100px 0; margin:0px auto; }
+.area-wide{ margin:0px 30px; }
 .font-mont,
 .font-noto,
 .font-score{font-family: 'Pretendard', sans-serif;}
@@ -81,7 +81,7 @@ table, th, td{word-break:break-word;}
 	transition:background-color 0.3s
 }
 #headerInner{position:relative; width: 100%; height:100%; margin:0px auto; -webkit-box-sizing: border-box; box-sizing: border-box;}
-#header .logo{position:relative; z-index:100; float:left; top: -10px; left: 60px;}
+#header .logo{position:relative; z-index:100; float:left; top: 20px; left: 150px;}
 #header .logo a{width: 120px; height: 40px; display:block; background: url("../images/로고주황.png") center/cover no-repeat;}
 #header .logo img{display:block; vertical-align: middle;}
 
@@ -118,7 +118,7 @@ table, th, td{word-break:break-word;}
 
 /* -------- Header :: GNB(PC) -------- */
 .gnb-overlay-bg{position:fixed; top:0; left:0; width:100%; height:100%; visibility:hidden; opacity:0;filter:Alpha(opacity=0);  z-index:9997; -webkit-transition:all 0.3s; transition:all 0.3s;}	/* gnb overlay BG */
-.gnb-overlay-bg.open{visibility:visible; opacity:1.0;filter:Alpha(opacity=100);}
+.gnb-overlay-bg.open{visibility:visible; opacity:1; filter:Alpha(opacity=100);}
 #gnb{position:absolute; text-align:center; top:0; left:0px; width:100%; z-index:99;}
 #gnb > ul{display:flex; justify-content: center; *zoom:1; -webkit-box-sizing: border-box; box-sizing: border-box;}
 #gnb > ul > li{position:relative; float:left; word-break:keep-all; -webkit-transition:all 0.3s; transition:all 0.3s;}
@@ -188,7 +188,7 @@ table, th, td{word-break:break-word;}
 .gnb-open #gnb > ul > li{width: 160px;}
 .gnb-open #gnb > ul > li > a{padding-right: 0; color: #f5f5f5;}
 .gnb-open #gnb > ul > li > a:hover{color: #e65100;}
-.gnb-open #gnb {background-color: #333; opacity: .8;}
+.gnb-open #gnb {background-color: #333; opacity: .95;}
 
 /* -------- Header :: GNB(Mobile) -------- */
 .nav-open-btn{display:none;}
@@ -216,7 +216,7 @@ table, th, td{word-break:break-word;}
 .to-top-btn:hover i{transform:translateY(-3px)}
 
 /* -------- FOOTER :: 상단 -------- */
-#footerTop{padding: 0 60px 60px;}
+#footerTop{padding: 50px 100px 60px;}
 #footertop .footer-left-con::before {
 	content: "";
 	position: absolute;
@@ -509,13 +509,13 @@ table, th, td{word-break:break-word;}
 /*  SUB LAYOUT :: 컨텐츠 레이아웃 */
 #content{font-family:  'Pretendard', sans-serif !important;}
 #content:not(.wide){padding:100px 5%; }
-#content.wide{padding:110px 0 200px 0}
+#content.wide{padding:110px 0 0px 0}
 
 /*  SUB LAYOUT :: 상단정보 (공통) */
 #contentInfoCon{position:relative; margin:0 auto 100px; text-align:center;}
 #contentInfoCon_company {margin: 0 auto 47px; text-align: center;}
 #contentInfoCon .content-tit{font-size:60px; font-weight:700; letter-spacing:-0.65px; color:#333; padding: 50px 0;}
-#contentInfoCon_company .content-tit {font-size:60px; font-weight:700;  color:#333; }
+#contentInfoCon_company .content-tit {font-size:60px; font-weight:700;  color:#333; margin-bottom: 8%; }
 
 
 /* ****************** MODAL LAYERPOPUP ********************** */

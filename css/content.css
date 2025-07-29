@@ -34,7 +34,7 @@
 
 .br-800{display: none;}
 .cm-gray-box{background-color:#ececec;}
-.inner-area{position: relative; max-width:1280px; margin:0 auto; padding:0 15px;}
+.inner-area{position: relative; max-width:1440px; margin:0 auto;}
 .co-blue{color:#0f3c7e;}
 .co-blue-02{color:#183969;}
 .co-green{color:#0ca3b1;}
@@ -77,18 +77,18 @@
 /*********** 인사말(220302) **********/
 .greeting-con-wrap-re { position: relative; background:no-repeat center bottom; background-image:url('/images/content/greeting_bg.png'); padding:0px 0 6.55%; } 
 
-.greeeting-top-box { width:67%; margin: 0 auto; } 
-.top-tit { font-size:30px; line-height:38px; color:#333; font-weight:600; letter-spacing:0px; margin-bottom:30px; text-align: center;} 
+.greeeting-top-box { width:100%; margin: 0 auto; } 
+.top-tit { font-size:30px; line-height:38px; color:#333; font-weight:600; letter-spacing:0px; margin-bottom:5%; text-align: center;} 
 .top-tit span { font-size:32px; line-height:38px; letter-spacing:0px; color:#e65100; } 
 .greeeting-top-box .top-txt-01 { font-size:20px; line-height:1.65em; letter-spacing:-0.5px; color:#000; font-weight:500; margin-bottom:7px; } 
 .greeeting-top-box .top-txt-02 { font-size: 20px; line-height: 28px; letter-spacing: 0px; color: #333; font-weight: 500; margin-bottom: 35px; } 
 .greeeting-top-box .sub-tit { display: block; font-size:26px; line-height:1.53em; letter-spacing:-1.6px; color:#000; font-weight:600; } 
 
-.greeting-bottom-box { width:90%;  text-align: left; } 
+.greeting-bottom-box { width:100%;  text-align: left; } 
 .greeting-bottom-box .bottom-txt { font-size: 20px;line-height: 28px;letter-spacing: 0px;color: #666;font-weight: 500;margin-bottom: 33px; line-height: 40px; } 
 .greeting-bottom-box .bottom-txt:first-child {
 	border-top: 1px solid #a6a6a6;
-	padding-top: 30px;
+	padding-top: 100px;
 } 
 .greeting-bottom-box .ceo-txt { position: relative; font-size:20px; line-height:2em; letter-spacing:-0.75px; color:#000; font-weight:500; padding-left:15px; margin-top:53px; } 
 .greeting-bottom-box .ceo-txt:before { position: absolute; content:''; width:4px; height:18px; left:0px; top:11px; background:#000; } 
@@ -97,8 +97,8 @@
 .greeting-img-box { position: absolute; bottom:0; right:0; width:50.2%; } 
 .greeting-img-box span { position: relative; display: block; width:100%; height:0; padding-top:122.56%; } 
 .greeting-img-box span img { position: absolute;
-    bottom: 12%;
-    right: 0;
+    bottom: 0%;
+    right: 10%;
     margin: auto;
     max-width: 63%;
     max-height: 100%; } 
@@ -278,7 +278,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c2e0', end
     line-height: 40px;
     color: #333;}
 .intro-info-wrap{display: table; width:100%; margin-bottom:224px;}
-.intro-info-wrap2{margin-bottom:224px;}
+.intro-info-wrap2{margin-bottom:15%;}
 /* .intro-info-wrap .img-box{display: table-cell; vertical-align:top; width:40.67%;} */
 .intro-info-wrap .img-box img{width:100%;}
 .intro-info-wrap .txt-box{display: table-cell; vertical-align:middle; width:50.33%; padding-left: 6.33%; box-sizing:border-box; }
@@ -293,7 +293,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c2e0', end
 /* 회사개요 :: 기술 */
 .intro-provide-wrap .intro-tit-box{margin-bottom:120px;}
 .intro-provide-wrap .intro-tit-box .intro-tit{margin-bottom:25px;}
-.provide-list-wrap{display: flex; justify-content: center;}
+.provide-list-wrap{display: flex; justify-content: center; margin-bottom: 5%;}
 .provide-list-wrap li{position: relative; width:16.87%; height:0; padding-top:16.87%; margin:0 -13px;}
 .provide-list-wrap li:before{position: absolute; content:''; width:100%; padding-top:100%;; -webkit-border-radius:50%;border-radius:50%; z-index:-1; opacity:0.8; top:0; left:0;}
 .provide-list-wrap li:nth-child(1):before{background:#6588cd;}
@@ -434,7 +434,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c2e0', end
 
 
 /*********** 회사연혁 **********/
-.history-page .inner-area{padding:0 7%;}
+.history-page .inner-area{padding:0 5% 5%;}
 .history-top-con{background:no-repeat center; background-image:url(../images/연혁background.png); padding:8.61% 0 10.78%; background-size:cover;}
 .history-top-con .tit{font-size:50px; line-height:1.16em; letter-spacing:-0.25px; color:#fff; text-align: left; }
 .history-page .sub-tab-con{padding-top:90px; margin-bottom:155px; text-align: left;}
@@ -623,6 +623,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c2e0', end
 .map {
     display: flex;
     justify-content: space-around;
+		margin-bottom: 5%;
 }
 iframe {
     width: 1200px;

@@ -156,7 +156,7 @@
 	
 }
 @media (max-width:1440px){
-	#footerTop {padding: 0 0 60px;}
+	#footerTop {padding: 20px 50px 30px;}
 	.to-top-btn {width: 48px; height: 48px;}
 	.footer-mid .social {
 		right: 0px;

@@ -12,7 +12,7 @@
   font-weight: 700;
   text-align: center;
 }
-.inquiry-content {margin-top: 200px;}
+.inquiry-content {margin-top: 100px;}
 
 .inquiry-box {
   border-top: 1px solid #ccc;
@@ -25,7 +25,6 @@
   top: 30%;
   right: -10%;
 }
-.inquiry-box figure img {}
 
 .inquiry-subtitle {
   font-size: 30px;
@@ -37,6 +36,7 @@
   font-size: 18px;
   line-height: 2rem;  
   word-spacing: 1.2px;
+  color: #333;
 }
 .inquiry-content p ul {font-size: 18px;}
 

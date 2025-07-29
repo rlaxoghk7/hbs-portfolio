@@ -52,13 +52,13 @@ function renderFAQ(data) {
       <div class="faq-box">
         <div class="faq-label q">Q</div>
         <div class="faq-content">
-          <a href="${item.questionLink}" target="_blank">${item.question}</a>
+          <a href="${item.questionLink}" >${item.question}</a>
         </div>
       </div>
       <div class="faq-box answer">
         <div class="faq-label a">A</div>        
         <div class="faq-content">
-          <a href="${item.answerLink}" target="_blank">${item.answer}</a>
+          <a href="${item.answerLink}" >${item.answer}</a>
         </div>
       </div>
     `;

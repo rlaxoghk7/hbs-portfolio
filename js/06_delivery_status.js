@@ -29,3 +29,11 @@ function searchQuote() {
     }, index * 1000000); // 1초 간격
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("quoteNumber");
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      searchQuote();
+    }
+  });
+});
