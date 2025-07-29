@@ -411,3 +411,34 @@
 	.quote-calculator select, .quote-calculator input {font-size: 12px;}
 	.quote-result {font-size: 16px;}
 }
+
+/******************** 개인정보처리방침 및 이메일수신차단 ***************/
+
+@media all and (max-width:1200px) {
+	.termsPopup.termsInfoPopup {padding: 50px 50px 50px;}
+	.termsPopup.termsInfoPopup .foot-logo img { width: 200px; height: 54px;}
+	.termsPopup.emailPopup .foot-logo img {width: 200px; height: 54px;}
+	.termsInfoPopup .terms-tit {font-size: 28px;}
+	.terms-email-wrap .terms-tit {font-size: 28px;}
+	.terms-info-wrap .terms-tit-02 {font-size: 16px; line-height: 1.5rem;}
+	.terms-email-wrap .terms-tit-02 {font-size: 14px;}
+	.terms-info-wrap .terms-tit-sub {font-size: 14px;}
+	.termsInfoPopup .closeTermsPopup {top: 5%; right: 5%;}
+	.terms-email-wrap .flexRight {font-size: 12px;}
+	
+}
+@media all and (max-width:800px) {
+	.termsPopup .terms-email-wrap {margin: 0 auto;}
+	.termsInfoPopup .terms-tit {font-size: 24px;}
+	.terms-email-wrap .terms-tit {font-size: 24px; margin-bottom: 50px;}
+	.termsInfoPopup .closeTermsPopup span {font-size: 28px;}
+	.termsInfoPopup .closeTermsPopup {top: 6%;}
+}
+@media all and (max-width:500px) {
+	.termsPopup.termsInfoPopup {padding: 50px 30px;}
+	.terms-info-wrap .terms-ul-tit {font-size: 13px;}
+	.terms-info-wrap .terms-tit-02 {font-size: 15px;}
+	.terms-info-wrap .terms-tit-sub {font-size: 12px;}
+	.terms-info-wrap .terms-ul li {font-size: 10px;}
+	.terms-email-wrap .terms-tit-02 {font-size: 12px; margin-bottom: 70px;}
+}

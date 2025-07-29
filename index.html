@@ -599,9 +599,9 @@
 					<div class="footer-address">
 						<div class="footer-address-txt">
 							<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2028104367"><p>사업자정보확인</p></a>
-							<a href="#" class="openTermsPopup"><p>개인정보처리방침</p></a>
+							<a href="#" class="openTermsPopup terms01"><p>개인정보처리방침</p></a>
 							<a href="#" class="openEmailPopup"><p>이메일무단수집거부</p></a>
-							<p onclick="location.href='/03_quote inquiry.html'" style="cursor:pointer;" >견적문의 </p>
+							<a href="./03_quote.html"><p>견적문의</p></a>
 						</div>
 					</div>
 				</div>
@@ -829,12 +829,48 @@
       </div>
   </div>
 
-
 </body>
 </html>
 	</section>
   </div>
 
+	<script>
+    $(function () {
+        $("#top_btn").on("click", function () {
+            $("html, body").animate({ scrollTop: 0 }, '500');
+            return false;
+        });
+        $(".terms01").click(function (e) {
+            e.preventDefault();
+            $(".termsPopupBg").fadeIn(200);
+            $(".termsInfoPopup").addClass("on");
+            $('html').css('overflow', 'hidden');
+        });
+        $(".terms02").click(function (e) {
+            e.preventDefault();
+            $(".termsPopupBg").fadeIn(200);
+            $(".emailPopup").addClass("on");
+            $('html').css('overflow', 'hidden');
+        });
+        // $(".termsPopup").children(".close").click(function () {
+        //     $(".termsPopupBg").fadeOut(200);
+        //     $(".termsInfoPopup").removeClass("on");
+        //     $(".emailPopup").removeClass("on");
+        //     $('html').css('overflow', 'visible');
+        // });
+        $('.termsPopupBg, .termsPopupBg .close').click(function (e) {
+            // 팝업 배경 자체를 클릭했거나, 닫기 버튼(.close)을 클릭했을 때만
+            if ($(e.target).is('.termsPopupBg') || $(e.target).is('.termsPopupBg .close')) {
+                $(".termsPopupBg").fadeOut(200);
+                $(".termsInfoPopup").removeClass("on");
+                $(".emailPopup").removeClass("on");
+                $('html').css('overflow', 'visible');
+            }
+        });
+
+    });
+</script>
+	
 
   <script>
 	dep1 = 0,

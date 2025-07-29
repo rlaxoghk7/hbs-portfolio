@@ -309,14 +309,14 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 .main-quick-wrapper{padding: 0 100px; display: grid; grid-template-columns: repeat(3,auto); grid-auto-rows: max-content; gap:30px; margin-top: 200px;}
 .main-quick-list{display: contents; padding: 0; margin: 0; list-style: none}
 
-.main-quick-item {position: relative; ; transform: translate(.3s ) ease-in-out; border-radius: 30px; width: 100%; overflow: hidden;transition: all 0.3s ease;}
-.main-quick-item:hover {box-shadow: 5px 5px 10px rgba(51, 51, 51, .2); transform: translateY(-10px) .7s ease-in-out; border: none;}
+.main-quick-item {position: relative; border: 1px solid #eee; border-radius: 20px; width: 100%; box-sizing: border-box; overflow: hidden;transition: all 0.3s ease;}
+.main-quick-item:hover {box-shadow: 5px 5px 10px rgba(51, 51, 51, .1); transform: translateY(-10px) .7s ease; outline: none; box-sizing: border-box; border: none;}
 .main-quick-item:nth-child(1) {grid-area: 1 / 1 / 2 / 2; width: 200px; height: 264px; background: url(../images/product-main1.png) center/cover no-repeat;}
 .main-quick-item:nth-child(2) {grid-area: 1 / 2 / 2 / 4; width: 371px; height: 264px; background: url(../images/product-main2.png) center/cover no-repeat;}
 .main-quick-item:nth-child(3) {grid-area: 2 / 1 / 3 / 3; width: 371px; height: 264px; background: url(../images/product-main3.png) center/cover no-repeat;}
 .main-quick-item:nth-child(4) {grid-area: 2 / 3 / 3 / 3; width: 200px; height: 264px; background: url(../images/product-main4.png) center/cover no-repeat;}
 
-.main-quick-item a{display: block; position: relative; width: 100%; height: 100%; -webkit-box-shadow: 55px 55px 150px -75px rgba(0,0,0,0.26); box-shadow: 55px 55px 150px -75px rgba(0,0,0,0.26); overflow: hidden;}
+.main-quick-item a{display: block; position: relative; width: 100%; height: 100%; box-shadow: 55px 55px 150px -75px rgba(0,0,0,0.26); overflow: hidden;}
 
 /* .main-quick-bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-transition: all 0.7s; transition: all 0.7s; border-radius: 30px;} */
 .main-quick-txt {position: absolute; right: 5%; bottom: 7%;}
@@ -367,6 +367,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 .main-customer-top .category{margin-right: 15px; font-size: 18px; font-weight: 700; display: inline-block;}
 .main-customer-top .date{font-size: 13px; opacity: 0.3; display: inline-block;}
 .main-customer-bottom .tit{display:-webkit-box;
+  color: #333;
 														-webkit-box-orient: vertical;
 														-webkit-line-clamp: 2;
 														overflow: hidden;
@@ -529,7 +530,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999;
   backdrop-filter: blur(6px);
-  padding-top: 100px;
+  padding: 100px 50px 50px;
   box-sizing: border-box;
 }
 .termsInfoPopup .foot-logo {text-align: center; margin-bottom: 50px;}
@@ -599,7 +600,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 .termsInfoPopup .closeTermsPopup span {font-size: 36px;}
 
 /*************이메일 무단수집거부 팝업 *************/
-.emailPopup {display: none;}
+
 .termsPopup.emailPopup {
   display: none; /* 기본 숨김 */
   position: fixed;
@@ -608,22 +609,20 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999;
   backdrop-filter: blur(6px); /* 배경 블러 효과 */
+  padding: 100px 50px 50px;
+  box-sizing: border-box;
 }
 
 /* 팝업 내부 박스 */
 .termsPopup .terms-email-wrap {
-  position: absolute;
-  top: 60%; left: 50%;
-  transform: translate(-50%, -50%);
+ 
+  margin: 100px auto 0;
   max-width: 1400px;
   width: 100%;
-  padding: 60px 40px;
   color: #f6f6f6;
 }
 .terms-email-wrap .foot-logo {
-	position: absolute;
-	top: -30%;
-	left: 3%;
+	margin-bottom: 50px;
 }
 
 /* 타이틀 */
@@ -645,7 +644,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 
 /* 하단 링크 */
 .terms-email-wrap .flexRight {
-  text-align: right;
+  
   font-size: 14px;
 }
 

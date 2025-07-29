@@ -73,7 +73,7 @@ body, table, th, td, input,
 textarea, button, select {
 	font-family:"Pretendard", Arial, sans-serif;
 	font-size:12px;
-	color:#ccc;
+	color:#eee;
 }
 button, select {
 	text-transform:none;

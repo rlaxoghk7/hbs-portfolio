@@ -1,7 +1,5 @@
 @charset "utf-8";
-img, video, iframe {
-    max-width: 100%;
-}
+
 #patent>div{margin-bottom: 4.44rem;}
 #patent img{border:1px solid #E5E5E5;cursor: pointer;}
 #patentModal .modal-content{background-color: transparent;border:0;border-radius: 0;padding:2rem 0}
@@ -33,7 +31,7 @@ img, video, iframe {
 .awardlist__thumbnail img{max-width:200px}
 .awardlist__content{position:relative;padding:15px 20px; text-align: left;}
 .awardlist__category{font-weight:bold;color:var(--point)}
-.awardlist__title{display:-webkit-box;overflow:hidden;min-height:34px;margin:28px 0 12px;font-size:24px;font-weight:500;line-height:34px;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.awardlist__title{display:-webkit-box; color: #333; overflow:hidden;min-height:34px;margin:28px 0 12px;font-size:24px;font-weight:500;line-height:34px;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
 .awardlist__agency{/*overflow:hidden;*/min-height:22px;font-size:16px;font-weight:300;color:#999;line-height:22px;-webkit-box-orient:vertical;-webkit-line-clamp:1}
 .awardlist__btn{position:absolute;bottom:20px;left:20px;width:60px;height:60px;border-radius:50%;background:transparent;-webkit-transition:all 0.3s ease-out;transition:all 0.3s ease-out}
 .awardlist__icon{display:inline-block;width:60px;height:60px;border-radius:50%;background-repeat:no-repeat;background-position:50%}
