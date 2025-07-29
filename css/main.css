@@ -657,8 +657,8 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 /* 닫기 버튼 (오른쪽 상단 X) */
 .closeEmailPopup {
   position: absolute;
-  top: -30%;
-  right: 3%;
+  top: 20%;
+  right:10%;
   font-size: 36px;
   color: #f6f6f6;
   background: none;
