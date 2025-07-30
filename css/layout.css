@@ -349,7 +349,8 @@ table, th, td{word-break:break-word;}
 .footer-left-con {display: flex; border-bottom: 1px solid #ccc; justify-content: space-between; padding-bottom: 50px;} 
 .footer-address{margin-bottom: 5px; letter-spacing:-0.75px;}
 .footer-address .footer-address-txt{color:#ccc; font-size:20px; line-height:1.7; display: flex; gap: 70px; }
-.footer-address a{color:inherit}
+.footer-address a{color:#777;}
+.footer-address a:nth-child(4) {color: #a14e20;}
 
 /* Footer :: 정보 style02 */
 .footer-address-info-box{margin-bottom:25px; letter-spacing:-0.25px;}

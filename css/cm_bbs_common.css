@@ -53,7 +53,7 @@
 .board-search-box{text-align:center;  padding:30px 0 100px; }
 .board-search-box .board-search-inner{position:relative; margin:0px auto; padding-right:40px; box-sizing:border-box;}
 .board-search-box .search-subject-select,
-.board-search-box .search-word{width:100%; border-right:0; float:left; width:40px; height:48px; font-size: 18px; border:1px solid #ccc; background-color:#fff; padding:0 20px; color:#ccc; letter-spacing:-0.3px;}
+.board-search-box .search-word{width:100%; border-right:0; float:left; width:40px; height:48px; font-size: 18px; border:1px solid #ccc; background-color:#fff; padding:0 20px; color:#ccc; letter-spacing:-0.3px; outline: none;}
 .board-search-box .search-subject-select{width:200px;}
 .board-search-box .search-subject-select + .search-word{width:calc(100% - 200px); border-left:0; outline: none;}
 .board-search-box .search-subject-select:focus,

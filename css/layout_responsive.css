@@ -98,7 +98,7 @@
 	.gnb-navigation-wrapper{position:relative; height:100%; width: 100%; box-sizing:border-box; padding-top:120px; overflow: auto;}	/* padding-top : Header 높이값 */
 	.header-util-menu-box + .gnb-navigation-wrapper{padding-top:0; height:calc(100% - 100px); }
 	#headerInner{height: 0}
-	.header-util-menu-box .inner-logo{position:relative; z-index:9999; float:left; top: 0px; left: -15px;}
+	.header-util-menu-box .inner-logo{position:relative; z-index:9999; float:left; top: 0px; left: 30px;}
 	.header-util-menu-box .inner-logo a {display:block; background: url("../images/logo.png") center/cover no-repeat; width: 150px; height: 40px;}
 	.header-util-menu-box .inner-logo img{ vertical-align: center;}
 	.gnb-navigation-inner {margin: 30px 0 50px;}
@@ -192,7 +192,7 @@
 
 @media all and ( max-width: 800px ) {
 	    #header .logo {top: -7px;}
-			.header-util-menu-box .inner-logo{top: 0px; left: -15px;}
+			.header-util-menu-box .inner-logo{top: 0px;}
 }
 @media all and ( max-width: 700px ){
 	
