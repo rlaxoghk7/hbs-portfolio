@@ -148,7 +148,7 @@
 
 
 @media all and (max-width:1220px){
-	.area-box {padding: 0 50px;	}
+	.area-box {padding: 0 3%;	}
 	.main-quick-wrapper {padding: 0 26px;}
 	.main-quick-right {top: -10px;}
 	.main-quick-right .main-tit-box {width: 45%;}
@@ -246,7 +246,7 @@
 }
 
 @media all and (max-width:1700px) {
-	#mainCustomerCon .main-tit-box {padding-bottom: 120px;}
+	#mainCustomerCon .main-tit-box {padding-bottom: 120px; padding-left: 0;}
 }
 
 @media all and (max-width:1600px) {
@@ -259,13 +259,15 @@
 	.main-control-box {margin-top: 70px; padding-left: 400px;}
 } */
 @media all and (max-width:1440px){
+	.main-tit-box .main-sub-title {font-size: 56px;}
+	.main-customer-con {margin-top: 0;}
 	.main-customer-wrapper{width: 60%;}
 	.main-customer-con{padding-top: 65%;}
 	#mainCustomerCon .main-tit-box .main-tit{font-size: 36px;}
 	.main-control-box {padding-bottom: 90px; padding-left: 300px;}
 }
-@media all and (max-width:1240px) {
-	.main-tit-box .main-sub-title {font-size: 56px;}
+@media all and (max-width:1300px) {
+	
 	#mainCustomerCon .main-tit-box .main-tit {font-size: 24px;}
 	.main-control-box button {width: 48px; height: 48px;}
 	.main-control-box button i {font-size: 20px;}
@@ -273,7 +275,7 @@
 }
 
 @media all and (max-width:1200px){
-	#mainCustomerCon .main-tit-box {padding-bottom: 320px;}
+	#mainCustomerCon .main-tit-box {padding-bottom: 340px;}
 	.main-customer-con{padding-top: 1000px; margin-top: 50px;}
 	.main-customer-title{bottom: 300px; width: 100%;}
 	.main-control-box{margin-top: 95px; display: none;}
@@ -331,13 +333,13 @@
 	.main-customer-item {height: 430px !important;}
 }
 @media all and (max-width:500px) {
-	.main-customer-con {padding-top: 700px;}
+	.main-customer-con {padding-top: 650px;}
 	.main-customer-item {height: 410px !important;}
 	.main-customer-title {bottom: 75px;}
 	.main-customer-list {margin: 50px -43px;}
 	#mainCustomerCon {padding-bottom: 20px;}
 	.main-customer-bg {height: 40%; top: 50px;}
-	#mainCustomerCon .main-tit-box {padding-bottom: 360px;}
+	#mainCustomerCon .main-tit-box {padding-bottom: 300px;}
 	.main-tit-box .main-sub-title {font-size: 46px;}
 	
 	#mainCustomerCon .main-tit-box .main-tit {font-size: 24px; font-weight: 400; margin-top: 20px; font-size: 20px;}

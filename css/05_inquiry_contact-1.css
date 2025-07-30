@@ -76,19 +76,22 @@ body {
 .faq-label.a {
   color: #e65100;
 }
+.gray-label {
+  color: #ccc !important;
+}
 
-.faq-content {
+
+
+.faq-content a{
   flex: 1;
   font-size: 20px;
   line-height: 1.5;
-  color: #e65100;
+  color: #333;
   padding-left: 30px;
 }
+.faq-box.answer .faq-content a {color: #e65100;}
+.faq-content p {color: #ccc; font-size: 20px; line-height: 1.5; padding-left: 30px; font-weight: 300; display: inline-block;}
 
-.faq-content a {
-  text-decoration: none;
-  color: #333;
-}
 
 
 
@@ -97,7 +100,7 @@ body {
   
 }
 .faq-box.answer {padding-left: 40px;}
-.faq-box.answer .faq-content a{color: #e65100;}
+
 
 
 @media all and ( max-width:1200px ) {
@@ -115,10 +118,12 @@ body {
 }
 @media all and ( max-width:800px ) {
   #contentInfoCon .ask-btn {font-size: 16px; top: 150px;}
-  .summary {padding: 20px 30px; font-size: 14px;}
+  .summary {padding: 20px 30px; font-size: 18px;}
   .faq-box {padding:8px;}
   .faq-label {font-size: 18px; line-height: 28px;}
   .faq-content {font-size: 16px; line-height: 2; padding-left: 10px;}
+  .faq-content a {font-size: 16px; padding-left: 0;}
+  .faq-content p {font-size: 16px; padding-left: 0;}
 }
 @media all and ( max-width:700px ) {
   #contentInfoCon .ask-btn {padding: 8px 16px; top: 140px;}
@@ -151,6 +156,8 @@ body {
   -webkit-line-clamp: 1; /* 보여줄 줄 수: 1줄 */
   -webkit-box-orient: vertical;
   overflow: hidden;}
+  .faq-content a {font-size: 12px; padding-left: 0;}
+  .faq-content p {font-size: 12px; padding-left: 0;}
 }
 @media all and ( max-width:460px ) {
   #contentInfoCon .ask-btn {font-size: 12px; padding: 6px 12px; top: 95px;}

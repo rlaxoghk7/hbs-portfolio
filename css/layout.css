@@ -509,7 +509,7 @@ table, th, td{word-break:break-word;}
 /*  SUB LAYOUT :: 컨텐츠 레이아웃 */
 #content{font-family:  'Pretendard', sans-serif !important;}
 #content:not(.wide){padding:100px 0%; }
-#content.wide{padding:110px 5% 0}
+#content.wide{padding:110px 2% 5%}
 
 /*  SUB LAYOUT :: 상단정보 (공통) */
 #contentInfoCon{position:relative; margin:0 auto 100px; text-align:center;}

@@ -348,7 +348,7 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 }
 
 .main-customer-title{position: absolute; bottom: 130px; bottom: 12.6%; left: 0; width: 100%;}
-#mainCustomerCon .main-tit-box {padding-bottom: 180px;}
+#mainCustomerCon .main-tit-box {padding-bottom: 180px; padding-left: 50px;}
 #mainCustomerCon .main-tit-box .main-tit{font-size: 30px; margin-top: 15px;}
 .main-control-box{padding-left: 380px;}
 .main-control-box button{display: inline-block; vertical-align: middle; width: 60px; height: 60px; background-color: #fff; -webkit-border-radius: 100%; border-radius: 100%;}
