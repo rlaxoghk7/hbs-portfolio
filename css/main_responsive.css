@@ -137,7 +137,6 @@
 @media all and (max-width:1440px){
 	#mainQuickCon .main-tit{font-size: 64px;}
 	.main-tit-box {padding-right: 0px;}
-	.main-quick-wrapper {padding: 0 54px;}
 	.main-quick-right {top: -60px;}
 	.main-quick-item:nth-child(1) {width: 150px; height: 200px;}
 	.main-quick-item:nth-child(2) {width: 300px; height: 200px;}
@@ -149,7 +148,6 @@
 
 @media all and (max-width:1220px){
 	.area-box {padding: 0 3%;	}
-	.main-quick-wrapper {padding: 0 26px;}
 	.main-quick-right {top: -10px;}
 	.main-quick-right .main-tit-box {width: 45%;}
 	.main-quick-left {width: calc(58% - 60px);}
