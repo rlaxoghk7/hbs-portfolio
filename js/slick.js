@@ -25,7 +25,8 @@
         factory(jQuery);
     }
 
-}(function($) {
+}
+(function($) {
     'use strict';
     var Slick = window.Slick || {};
 
@@ -46,7 +47,7 @@
                 asNavFor: null,
                 prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
                 nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 3000,
                 centerMode: false,
                 centerPadding: '50px',

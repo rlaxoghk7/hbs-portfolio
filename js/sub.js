@@ -67,6 +67,10 @@ $(document).ready(function  () {
 		}),{ passive: true })
 	}
 
+
+
+
+	
 	/* ************************
 	* Func : 컨텐츠 메뉴 FIXED 및 클릭시 해당영역 이동
 	* getScrollTop(), getWindowWidth(), checkOffset(), toFit(), checkFixedHeight(), moveScrollTop() 필요
@@ -364,3 +368,12 @@ $('.link_open').on('click', function(){
 //하단 현재 년도 출력
 //document.getElementById('this_year').textContent = new Date().getFullYear()
 $('#this_year').text(new Date().getFullYear());
+
+
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 50) {
+      $('#header').addClass('scrolled');
+    } else {
+      $('#header').removeClass('scrolled');
+    }
+  });

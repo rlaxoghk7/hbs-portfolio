@@ -249,7 +249,7 @@ $(document).ready(function  () {
 		arrows: true,
 		fade: false,
 		dots:false,
-		autoplay: false,
+		autoplay: true,
 		speed:800,
 		infinite:true,
 		autoplaySpeed: 3000,
@@ -376,4 +376,6 @@ $('.link_open').on('click', function(){
 //하단 현재 년도 출력
 //document.getElementById('this_year').textContent = new Date().getFullYear()
 $('#this_year').text(new Date().getFullYear());
+
+
 
