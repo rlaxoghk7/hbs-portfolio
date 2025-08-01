@@ -523,7 +523,14 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 	color: #f5f5f5;
 
 }
+
+
 /*************개인정보 처리방침 ******************/
+body.popup-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
 .termsPopup.termsInfoPopup {
  	display: none;
   position: fixed;
@@ -593,8 +600,8 @@ font-family:'S-CoreDream', 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum G
 /* 닫기 버튼 */
 .termsInfoPopup .closeTermsPopup {
   position: absolute;
-  top: 15%;
-  right: 12%;
+  top: 10%;
+  right: 13%;
   font-size: 36px;
   color: #f6f6f6;
   background: none;

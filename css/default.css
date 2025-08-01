@@ -71,7 +71,7 @@ input, select, textarea {
 }
 body, table, th, td, input,
 textarea, button, select {
-	font-family:"Pretendard", Arial, sans-serif;
+	font-family:"Pretendard", sans-serif;
 	font-size:12px;
 	color:#eee;
 }
