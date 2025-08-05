@@ -11,7 +11,7 @@
 					<div class="footer-address">
 						<div class="footer-address-txt">
 							<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2028104367"><p>사업자정보확인</p></a>
-							<a href="#" class="openTermsPopup terms01"><p>개인정보처리방침</p></a>
+							<a href="../00_privacy.html"><p>개인정보처리방침</p></a>
 							<a href="#" class="openEmailPopup"><p>이메일무단수집거부</p></a>
 							<a href="../03_quote.html"><p>견적문의 </p></a>
 						</div>
@@ -61,13 +61,13 @@
 		</article>
 	</footer>	
 	<!-- //footer -->
-	<div class="termsPopup termsInfoPopup">
+	<!-- <div class="termsPopup termsInfoPopup">
 		<span class="foot-logo"><img src="./images/logo2.png" alt="비씨엔씨" /></span>
-		<h3 class="terms-tit">개인 정보 처리 방침</h3>
+		<h3 class="terms-tit" href="../00_PI.html">개인 정보 처리 방침</h3>
 		<button class="closeTermsPopup"><span class="material-symbols-outlined">close</span></button>
       <div class="terms-info-wrap">
-					
-          <div class="terms-cont terms-cont-01">
+					 -->
+          <!-- <div class="terms-cont terms-cont-01">
               <h6 class="terms-tit-02">
                   에이치비에스(주) (이하 '회사'라고 함)는 이용자의 개인정보를 보호하기 위하여, 「정보통신망 이용촉진 및 정보보호에 관한 법률」,
                   「개인정보보호법」,
@@ -219,7 +219,7 @@
                   <p class="terms-tit-sub">귀하께서는 일동제약의 개인정보 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 동의를 거부할 경우 서비스 이용이 제한될 수 있습니다.</p>
               </div>
           </div>
-      </div>
+      </div> -->
   </div>
 	<div class="termsPopup emailPopup">
       <div class="terms-email-wrap">
@@ -241,3 +241,40 @@
           </div>
       </div>
   </div>
+
+  	<script>
+    $(function () {
+        $("#top_btn").on("click", function () {
+            $('html,body').animate({ scrollTop: 0 }, '500');
+            return false;
+        });
+        $(".terms01").click(function (e) {
+            e.preventDefault();
+            $(".termsPopupBg").fadeIn(200);
+            $(".termsInfoPopup").addClass("on");
+            $('html,body').css('overflow', 'hidden');
+        });
+        $(".terms02").click(function (e) {
+            e.preventDefault();
+            $(".termsPopupBg").fadeIn(200);
+            $(".emailPopup").addClass("on");
+            $('html,body').css('overflow', 'hidden');
+        });
+        // $(".termsPopup").children(".close").click(function () {
+        //     $(".termsPopupBg").fadeOut(200);
+        //     $(".termsInfoPopup").removeClass("on");
+        //     $(".emailPopup").removeClass("on");
+        //     $('html').css('overflow', 'visible');
+        // });
+        $('.termsPopupBg, .termsPopupBg .close').click(function (e) {
+            // 팝업 배경 자체를 클릭했거나, 닫기 버튼(.close)을 클릭했을 때만
+            if ($(e.target).is('.termsPopupBg') || $(e.target).is('.termsPopupBg .close')) {
+                $(".termsPopupBg").fadeOut(200);
+                $(".termsInfoPopup").removeClass("on");
+                $(".emailPopup").removeClass("on");
+                $('html').css('overflow', 'visible');
+            }
+        });
+
+    });
+</script>

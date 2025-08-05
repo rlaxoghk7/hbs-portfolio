@@ -18,14 +18,23 @@ body {
   bottom: 115px;
   white-space: nowrap;
 }
-select#categoryA {}
 select#category {appearance: none; background-color: #eee; color: #aaa; font-weight: 500;}
 .quote-form {
   max-width: 1400px;
   margin: 0 auto;
   padding: 100px 5%;
 }
+.quote-form_pri {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 5% 150px;
+}
+
 .quote-form-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.quote-form_pri-title {
   text-align: center;
   margin-bottom: 100px;
 }
@@ -109,7 +118,7 @@ input, select {font-weight: 300;}
 }
 .form-actions {
   position: relative;
-  margin-top: 60px;
+  margin-top: 80px;
   display: flex;
   gap: 3%;
   flex-wrap: wrap;
@@ -139,7 +148,9 @@ input, select {font-weight: 300;}
 
 /* 개인정보 동의서 팝업 */
 .quote-form .privacy-tit {margin: 50px 0 30px; }
+.quote-form_pri .privacy-tit {margin: 50px auto 30px; text-align: center; }
 .quote-form .privacy-tit h2{font-size: 32px; padding:30px 0; margin-bottom: 0; border-bottom: 1px solid #ddd;}
+.quote-form_pri .privacy-tit h2{font-size: 48px; padding:30px 0 100px; margin-bottom: 0; border-bottom: 1px solid #ddd;}
 .privacy_con {
   max-height: 300px;
   overflow-y: auto;
@@ -159,6 +170,20 @@ input[type=checkbox] {
 zoom: 1.5;
 padding-top: 1px;
 }
+/* 개인정보 처리방침 */
+.privacy_con_pri {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.privacy_con_pri .text-gray {color: #888888;}
+.privacy_con_pri .text-gray p {font-size: 16px; color: #555; font-family: 'Pretendard', sans-serif;}
+
 
 @media (max-width: 1100px) {
   .quote-form-title p {font-size: 22px; line-height: 32px;}
@@ -174,8 +199,11 @@ padding-top: 1px;
   .group-wrap {gap: 5%;}
   .mail-wrap {gap: 5%;}
   .mail-wrap p {font-size: 18px; top: 40px;}
+  .quote-form_pri {padding-bottom: 100px;}
   .quote-form .privacy-tit h2 {padding: 0 0 30px; font-size: 28px;}
+  .quote-form_pri .privacy-tit h2 {font-size: 40px; padding: 0px 0 70px;}
   .form-group-text .word_count {font-size: 12px;}
+  .btn a{font-size: 18px; padding: 12px 16px;}
 }
 @media (max-width: 800px) {
   .quote-form {padding: 50px 5%;}
@@ -183,6 +211,7 @@ padding-top: 1px;
   .mail-wrap p {left: 49.5%;}
   .form-actions {margin-top: 30px;}
   .form-group-text .word_count {bottom: 14px; right: 20px;}
+  .btn a{padding: 10px 14px;}
 }
 @media (max-width: 600px) {
   .quote-form h2 {font-size: 40px;}
@@ -192,8 +221,14 @@ padding-top: 1px;
   .mail-wrap p {font-size: 14px; left: 49.2%;}
   .privacy_con .text-gray p {font-size: 14px;}
   .privacy_tit {font-size: 16px; margin-top: 10px;}
+  .form-actions {gap: 0;}
   .btn {font-size: 16px;}
   .form-group-text .word_count {font-size: 10px;}
+
+  /* 개인정보 */
+  .quote-form_pri {padding-top: 0px; padding-bottom: 50px;}
+  .quote-form_pri .privacy-tit h2 {font-size: 32px; padding-bottom: 50px;}
+  .privacy_con_pri .text-gray p {font-size: 14px;}
 }
 @media (max-width: 500px) {
   .quote-form h2 {font-size: 34px; margin-bottom: 20px;}
@@ -206,9 +241,10 @@ padding-top: 1px;
   .mail-wrap .form-group.site {width: 40%;}
   .mail-wrap p {left: 58.2%; top: 34px;}
   .quote-form .privacy-tit h2 {font-size: 24px; padding-bottom: 15px;}
+  .quote-form_pri .privacy-tit h2 {font-size: 28px;}
   .privacy_tit {font-size: 14px;}
   .form-actions {margin-top: 20px;}
-  .btn {font-size: 14px; padding: 8px 16px;}
+  .btn a{font-size: 14px; padding: 8px 16px;}
 }
 @media (max-width: 400px) {
   .quote-form {padding: 20px 5% 50px;}
